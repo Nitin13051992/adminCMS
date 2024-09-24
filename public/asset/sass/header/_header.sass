@@ -1,0 +1,341 @@
+header 
+    // position: fixed
+    // width: calc( 100% - 85% )
+    transition: all 1s
+    position: relative
+    display: block
+    height: 100vh
+    z-index: 9
+    @include respond-to(screen-767)
+        padding: 0
+    .row 
+        display: flex
+
+.title 
+    width: 100%
+    position: relative
+    display: inline-block
+
+.title h1,
+.title h2,
+.title h3,
+.title h4,
+.title h5,
+.title h6 
+    font-size: 32px
+    line-height: 38px
+    font-weight: 500
+    letter-spacing: 2px
+
+.title p 
+    font-size: 16px
+    line-height: 24px
+    text-align: left
+
+.CmnPage
+    width: 100%
+    position: relative 
+    display: block
+
+/* Commain Button Class */
+main
+    display: block
+    position: relative
+    transition: all 1s
+    width: calc( 100% - 15% )
+
+.full_bdy
+    width: calc( 100% - 5% )
+
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active ,
+input:-webkit-autofill, 
+textarea:-webkit-autofill, 
+select:-webkit-autofill 
+    background-color: transparent !important
+    background-image: none !important
+
+// Comain all pages Text From sass
+
+fieldset
+    width: 100%
+    position: relative
+    display: block
+    z-index: 1
+    margin-bottom: 25px
+// Header Section  sass 
+
+.top-hdr-wppr,
+.menu_lg_wppr,
+.menu_lg_wppr a,
+.menu_lg_wppr a img,
+.menu_lst
+    width: 100%
+    display: block
+    position: relative
+
+.top-hdr-wppr
+    height: 100%
+
+.top-hdr-wppr
+    // background: #2D3136
+    border: 1px solid rgba(217, 217, 217, 0.21)
+    .menu_sld_btn
+        top: 0%
+        border: 0
+        padding: 0
+        z-index: 5
+        width: 35px
+        right: -36px
+        height: 35px
+        position: absolute
+        border-radius: 5px
+        border-top-left-radius: 0
+        border-bottom-left-radius: 0
+        &::before
+            @include aftrBeforBX(12px,12px,12px,0,0,15px)
+            transform: rotate(135deg)
+            border-bottom: 1px solid $white 
+            border-right: 1px solid $white 
+            transition: all 1s
+        &:hover
+            background: $ThemClr
+            &::before
+                border-color: $black 
+    .menu_lg_wppr
+        padding: 15px 0 30px
+        a 
+            transition: all 1s
+            overflow: hidden
+            width: 100%
+            display: flex
+            padding: 0 15px
+            img 
+                width: auto
+                transition: all 1s
+    nav
+        width: 100%
+        padding: 0 10px
+        height: calc(100vh - 140px)
+        .menu_lst,
+        .lgot_menu
+            height: calc( 100% - 50px )
+            overflow: auto
+            ul
+                li 
+                    margin-bottom: 10px
+                    a
+                        width: 100%
+                        display: flex
+                        color: $white
+                        font-size: 16px 
+                        font-weight: 400
+                        overflow: hidden
+                        line-height: 24px
+                        padding: 15px 20px
+                        transition: all 1s
+                        border-radius: 8px 
+                        align-items: center
+                        justify-content: flex-start 
+                        &:hover
+                            background: #212529
+                        em 
+                            transition: all 1s
+                            margin-right: 10px
+                            display: block
+                            width: 25px
+                            img 
+                                width: 100%
+                                display: block
+                        small 
+                            width: 0%
+                            display: block
+                            overflow: hidden
+                            transition: all 1s
+                            white-space: nowrap
+                        .show_txt
+                            width: 100%
+                    .actv_menu
+                        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+                        background: #212529  
+                .drp_dwn_btn
+                    position: relative
+                    &::before
+                        @include aftrBeforBX(8px,8px,22px,25px,0,auto)  
+                        border-bottom: 2px solid #666 
+                        border-right: 2px solid #666
+                        transform: rotate(-45deg)
+                        transition: all 1s
+                        cursor: pointer
+                    .drp_dwn_menu
+                        width: 100%
+                        padding: 8px
+                        display: none
+                        margin-top: 3px
+                        border-radius: 8px
+                        background: #252a2f
+                        ul 
+                            li 
+                                margin-bottom: 5px
+                                display: flex
+                                &:last-child
+                                    margin-bottom: 0
+                                a
+                                    padding: 3px
+                                    margin: 0 30px
+                                    font-size: 14px
+                                    color: #969696
+                                    line-height: 20px
+                                    box-shadow: none
+                                    position: relative
+                                    overflow: inherit
+                                    background: transparent
+                                    &::before
+                                        @include aftrBeforBX(0px,0px,10px,0px,0,-16px)
+                                        border-right: 4px solid transparent  
+                                        border-left: 4px solid transparent  
+                                        border-bottom: 4px solid #969696  
+                                        transform: rotate(90deg)
+                                    &:hover
+                                        color: #a3ee80
+                                    small 
+                                        width: 70px
+                                        transition: none
+                                        margin-right: 5px
+                                .actv_menu
+                                    color: #a3ee80
+                                    &::before
+                                        border-right: 5px solid transparent  
+                                        border-left: 5px solid transparent  
+                                        border-bottom: 5px solid #a3ee80                                              
+                .opn_menu
+                    &::before
+                        transform: rotate(45deg)
+
+
+
+        .lgot_menu
+            height: auto     
+                         
+.hide_menu
+    width: calc( 100% - 95% )
+    .top-hdr-wppr
+        .menu_sld_btn
+            &::before
+                left: 10px
+                transform: rotate(-45deg) 
+        .row
+            .menu_lg_wppr
+                a 
+                    width: 65px
+            nav
+                .menu_lst,
+                .lgot_menu
+                    ul 
+                        li 
+                            margin-bottom: 10px
+                            justify-content: center
+                            a 
+                                width: 50px
+                                padding: 10px
+                                margin: 0 auto
+                                border-radius: 5px
+                                justify-content: center
+                                em 
+                                    margin: 0
+                        .drp_dwn_btn
+                            &::before
+                                display: none
+                            .drp_dwn_menu
+                                border-radius: 5px
+                                ul 
+                                    li 
+                                        a 
+                                            margin: 0
+                                            &::before
+                                                left: 0
+                                            small
+                                                width: 0
+                                                
+
+                                
+.ui-datepicker
+    z-index: 1111 !important
+    background: #2d3136
+    box-shadow: 0 4px 7px black
+    border: 0 !important
+    border-radius: 5px
+    .ui-datepicker-calendar 
+        thead
+            tr
+                th
+                    color: #ffffffbf !important
+                    font-weight: 400
+    .ui-datepicker-header
+        background: #252429
+        font-weight: 400
+        color: #fff
+        border: 0
+        a.ui-corner-all
+            background: #272b30
+            cursor: pointer
+            border: 0
+            &:hover
+                background: #66ca38
+            &::before
+                @include aftrBeforBX(10px,10px,50%,0,0,50%)
+                border-bottom: 2px solid #fff 
+                border-right: 2px solid #fff 
+                transform: translate(-50%,-50%)                
+            span
+                display: none
+        a.ui-datepicker-prev
+            &::before
+                transform: translate(-50%, -50%) rotate(135deg)
+                
+        a.ui-datepicker-next
+            &::before
+                transform: translate(-50%, -50%) rotate(-45deg)    
+        .ui-datepicker-title     
+            .ui-datepicker-month,
+            .ui-datepicker-year
+                color: #ffffffbf !important
+                background: transparent
+                border: 0 !important
+                padding-bottom: 5px
+                text-align: center
+                option
+                    color: $black
+                    border-radius: 0 !important                
+    a.ui-state-default
+        border: 1px solid #515053a1 !important
+        background: #2d3136 !important
+        font-weight: normal !important
+        color: #ffffff !important
+        border-radius: 4px !important
+        text-align: center !important
+        &:hover
+            border: 1px solid #a3ee80 !important
+            background: #a3ee80 !important
+            color: #000000 !important
+    a.ui-state-highlight, 
+    a.ui-widget-content .ui-state-highlight, 
+    a.ui-widget-header .ui-state-highlight
+        border: 1px solid #a3ee80 !important
+        background: #a3ee80 !important
+        color: #000000 !important
+    
+*::-webkit-scrollbar 
+    width: 5px
+    height: 5px
+    transition: all 1s
+        
+*::-webkit-scrollbar-track 
+    box-shadow: inset 0 0 6px rgb(169 169 169)
+*::-webkit-scrollbar-thumb 
+    background-color: $ThemClr
+    outline: 1px solid $ThemClr
+
+
+

@@ -1,0 +1,417 @@
+header 
+    // position: fixed
+    width: calc( 100% - 90% )
+    transition: all 1s
+    position: relative
+    display: block
+    height: 100vh
+    z-index: 9
+    @include respond-to(screen-1600)
+        width: calc( 100% - 84% )
+    .row 
+        :display flex
+
+.smalr_wdth
+    width: calc( 100% - 97% )
+    @include respond-to(screen-1600)
+        width: calc( 100% - 95% )
+    .top-hdr-wppr 
+        .cls_menu_btn
+            &::before
+                transform: translate(-60%,-60%) rotate(-45deg)            
+        .menu_lg_wppr
+            justify-content: center
+            a 
+                h2
+                    display: none
+        nav 
+            .menu_lst 
+                ul 
+                    li 
+                        a
+                            justify-content: center
+                        p 
+                            display: none
+        
+.title 
+    width: 100%
+    position: relative
+    display: inline-block
+
+.title h1,
+.title h2,
+.title h3,
+.title h4,
+.title h5,
+.title h6 
+    font-size: 32px
+    line-height: 38px
+    font-weight: 500
+    letter-spacing: .5px
+
+.title p 
+    font-size: 16px
+    line-height: 24px
+    text-align: left
+
+.CmnPage
+    width: 100%
+    position: relative 
+    display: block
+
+/* Commain Button Class */
+main
+    display: block
+    position: relative
+    transition: all 1s
+    width: calc( 100% - 10% )
+    @include respond-to(screen-1600)
+        width: calc( 100% - 14% )
+
+.full_wdth
+   width: calc( 100% - 3% ) 
+   @include respond-to(screen-1600)
+    width: calc( 100% - 5% )
+
+
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active ,
+input:-webkit-autofill, 
+textarea:-webkit-autofill, 
+select:-webkit-autofill 
+    background-color: transparent !important
+    background-image: none !important
+
+// Comain all pages Text From sass
+
+fieldset
+    width: 100%
+    position: relative
+    display: block
+    z-index: 1
+    margin-bottom: 25px
+// Header Section  sass 
+
+.top-hdr-wppr,
+.menu_lg_wppr,
+.menu_lg_wppr a,
+.menu_lg_wppr a img,
+.menu_lst
+    width: 100%
+    display: block
+    position: relative
+
+.top-hdr-wppr
+    height: 100%
+
+.top-hdr-wppr
+    background: #fefbfb
+    box-shadow: 0 0 20px #d1d1d1
+    .cls_menu_btn
+        position: absolute
+        background: $ThemClr
+        right: -30px
+        height: 30px
+        width: 30px
+        border: 0
+        top: 0
+        &::before
+            @include aftrBeforBX(10px,10px,50%,0,0,50%)
+            transform: translate(-60%,-60%) rotate(135deg)
+            border-bottom: 2px solid $white
+            border-right: 2px solid $white
+    .menu_sld_btn
+        top: 0%
+        border: 0
+        padding: 0
+        z-index: 5
+        width: 30px
+        right: -30px
+        height: 30px
+        position: absolute
+        border-radius: 5px
+        background: $ThemClr
+        border-top-left-radius: 0
+        border-bottom-left-radius: 0
+        &::before
+            @include aftrBeforBX(12px,12px,7px,0,0,12px)
+            transform: rotate(135deg)
+            border-bottom: 1px solid $white 
+            border-right: 1px solid $white 
+        &:hover
+            background: #f2f2f2
+            &::before
+                border-color: $ThemClr
+    .menu_lg_wppr
+        justify-content: flex-start
+        margin: 15px 0 20px
+        transition: all 1s
+        overflow: hidden
+        display: flex
+        height: 60px
+        @include respond-to(screen-1600)
+            margin: 15px 0 20px 
+        a 
+            justify-content: flex-start
+            align-items: center
+            display: flex
+            width: 27px
+            // margin: 0 auto
+            @include respond-to(screen-1600)
+                width: 20px
+            img 
+                width: 100%
+                opacity: .7
+                display: block
+                margin-right: 10px
+                transition: all 1s
+            h2 
+                transition: all 1s
+                color: #616263
+                font-weight: 700
+                font-size: 38px
+    nav
+        width: 100%
+        padding: 0 15px
+        height: calc(100vh - 140px)
+        .menu_lst,
+        .lgot_menu
+            height: calc( 100% - 50px )
+            overflow: auto
+            ul
+                overflow: hidden
+                li 
+                    margin-bottom: 30px
+                    @include respond-to(screen-1600)
+                        margin-bottom: 20px
+                    a
+                        width: 100%
+                        padding: 0px
+                        display: flex
+                        color: $black
+                        font-size: 18px 
+                        font-weight: 400
+                        overflow: hidden
+                        line-height: 24px
+                        border-radius: 8px 
+                        align-items: center
+                        justify-content: flex-start
+                        &:hover
+                            em 
+                                img 
+                                    filter: brightness(1)
+                                    opacity: 1
+                            p 
+                                color: $ThemClr
+                        em 
+                            transition: all 1s
+                            margin-right: 15px
+                            display: block
+                            width: 18px
+                            @include respond-to(screen-1600)
+                                width: 15px
+                            img 
+                                width: 100%
+                                opacity: .3
+                                display: block
+                                filter: brightness(0)
+                        p 
+                            font-size: 16px
+
+                            text-transform: capitalize
+                                
+                        small 
+                            width: 0%
+                            display: block
+                            overflow: hidden
+                            transition: all 1s
+                            white-space: nowrap
+                        .show_txt
+                            width: 100%
+                    .actv_menu
+                        em 
+                            width: 20px
+                            img 
+                                filter: brightness(1)
+                                opacity: 1
+                        p 
+                            color: $ThemClr
+                .drp_dwn_btn
+                    position: relative
+                    &::before
+                        @include aftrBeforBX(8px,8px,22px,25px,0,auto)  
+                        border-bottom: 2px solid #666 
+                        border-right: 2px solid #666
+                        transform: rotate(-45deg)
+                        transition: all 1s
+                        cursor: pointer
+                    .drp_dwn_menu
+                        width: 100%
+                        padding: 8px
+                        display: none
+                        margin-top: 3px
+                        border-radius: 8px
+                        background: $ThemClr
+                        ul 
+                            li 
+                                margin-bottom: 5px
+                                display: flex
+                                &:last-child
+                                    margin-bottom: 0
+                                a
+                                    padding: 3px
+                                    margin: 0 30px
+                                    font-size: 14px
+                                    color: #969696
+                                    line-height: 20px
+                                    box-shadow: none
+                                    position: relative
+                                    overflow: inherit
+                                    background: transparent
+                                    &::before
+                                        @include aftrBeforBX(0px,0px,10px,0px,0,-16px)
+                                        border-right: 4px solid transparent  
+                                        border-left: 4px solid transparent  
+                                        border-bottom: 4px solid #969696  
+                                        transform: rotate(90deg)
+                                    &:hover
+                                        color: #a3ee80
+                                    small 
+                                        width: 70px
+                                        transition: none
+                                        margin-right: 5px
+                                .actv_menu
+                                    color: #a3ee80
+                                    &::before
+                                        border-right: 5px solid transparent  
+                                        border-left: 5px solid transparent  
+                                        border-bottom: 5px solid #a3ee80                                              
+                .opn_menu
+                    &::before
+                        transform: rotate(45deg)
+        .lgot_menu
+            height: auto     
+                         
+.hide_menu
+    width: calc( 100% - 95% )
+    .top-hdr-wppr
+        .menu_sld_btn
+            &::before
+                left: 5px
+                transform: rotate(-45deg) 
+        .row
+            .menu_lg_wppr
+                a 
+                    width: 100px
+                    padding: 0 30px
+            nav
+                .menu_lst,
+                .lgot_menu
+                    ul 
+                        li 
+                            margin-bottom: 15px
+                            justify-content: center
+                            a 
+                                width: 50px
+                                padding: 8px
+                                margin: 0 auto
+                                border-radius: 5px
+                                justify-content: center
+                                em 
+                                    margin: 0
+                                small
+                                    width: 0px
+                        .drp_dwn_btn
+                            &::before
+                                display: none
+                            .drp_dwn_menu
+                                border-radius: 5px
+                                ul 
+                                    li 
+                                        a 
+                                            margin: 0
+                                            &::before
+                                                left: 0
+                                            small
+                                                width: 0
+                                                
+
+                                
+.ui-datepicker
+    z-index: 1111 !important
+    background: #2d3136
+    box-shadow: 0 4px 7px black
+    border: 0 !important
+    border-radius: 5px
+    .ui-datepicker-calendar 
+        thead
+            tr
+                th
+                    color: #ffffffbf !important
+                    font-weight: 400
+    .ui-datepicker-header
+        background: #252429
+        font-weight: 400
+        color: #fff
+        border: 0
+        a.ui-corner-all
+            background: #272b30
+            cursor: pointer
+            border: 0
+            &:hover
+                background: #66ca38
+            &::before
+                @include aftrBeforBX(10px,10px,50%,0,0,50%)
+                border-bottom: 2px solid #fff 
+                border-right: 2px solid #fff 
+                transform: translate(-50%,-50%)                
+            span
+                display: none
+        a.ui-datepicker-prev
+            &::before
+                transform: translate(-50%, -50%) rotate(135deg)
+                
+        a.ui-datepicker-next
+            &::before
+                transform: translate(-50%, -50%) rotate(-45deg)    
+        .ui-datepicker-title     
+            .ui-datepicker-month,
+            .ui-datepicker-year
+                color: #ffffffbf !important
+                background: transparent
+                border: 0 !important
+                padding-bottom: 5px
+                text-align: center
+                option
+                    color: $black
+                    border-radius: 0 !important                
+    a.ui-state-default
+        border: 1px solid #515053a1 !important
+        background: #2d3136 !important
+        font-weight: normal !important
+        color: #ffffff !important
+        border-radius: 4px !important
+        text-align: center !important
+        &:hover
+            border: 1px solid #a3ee80 !important
+            background: #a3ee80 !important
+            color: #000000 !important
+    a.ui-state-highlight, 
+    a.ui-widget-content .ui-state-highlight, 
+    a.ui-widget-header .ui-state-highlight
+        border: 1px solid #a3ee80 !important
+        background: #a3ee80 !important
+        color: #000000 !important
+    
+*::-webkit-scrollbar 
+    width: 5px
+    height: 7px
+*::-webkit-scrollbar-track 
+    box-shadow: inset 0 0 6px rgb(169 169 169)
+*::-webkit-scrollbar-thumb 
+    background-color: $ThemClr
+    outline: 1px solid $ThemClr
+
+
+

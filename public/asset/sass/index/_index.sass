@@ -1,0 +1,428 @@
+
+.cmn-txt-wppr,
+.rcstr_sts_wppr,
+.sts_crt_wppr,
+.crt_txt,
+.rcstr_sts_acdng_dtl,
+.acdng_fltr_wppr,
+.acdng_tbl_data_wppr,
+.acdng_tbl_data,
+.trk_wppr,
+.trk_data_lst,
+.trck_lst_itm
+    width: 100%
+    position: relative
+    display: block
+
+.cmn-txt-wppr
+    height: 100vh
+    overflow: hidden
+.rcstr_sts_wppr   
+    padding: 25px 40px
+    overflow-x: hidden
+    .title
+        h1
+            line-height: normal
+            margin-bottom: 0px
+            font-weight: 300
+            font-size: 24px
+            color: $white
+    .sts_crt_wppr
+        display: flex
+        margin: 30px 0
+        align-items: flex-start
+        justify-content: space-between
+        .crt-3
+            width: 24%
+            display: flex
+            padding: 20px 30px
+            border-radius: 15px
+            background: #272B30
+            align-items: flex-start
+            justify-content: flex-start
+            box-shadow: 5px 9px 7px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+            &:nth-child(2)
+                .crt_icn
+                    span 
+                        background: #D0A9EE
+                .crt_txt
+                    .title
+                        h2 
+                            color: #D0A9EE
+            &:nth-child(3)
+                .crt_icn
+                    span 
+                        background: #A3EE80
+                .crt_txt
+                    .title
+                        h2 
+                            color: $white
+                            small
+                                color: #A3EE80
+            &:nth-child(4)
+                .crt_icn
+                    span 
+                        background: #FF9559
+                .crt_txt
+                    .title
+                        h2 
+                            color: $white
+                            small
+                                color: #FF9559
+            .crt_icn
+                width: 45px
+                height: 45px
+                display: block
+                position: relative
+                margin-right: 20px
+                span 
+                    width: 100%
+                    height: 100%
+                    display: flex
+                    border-radius: 50% 
+                    align-items: center
+                    background: #B1E5FC
+                    justify-content: center
+            .crt_txt
+                width: auto
+                display: flex
+                .title
+                    h5,
+                    h2
+                        color: $white
+                    h5 
+                        font-size: 20px
+                        font-weight: 400
+                        line-height: 20px
+                        margin-bottom: 15px
+                    h2 
+                        font-size: 35px
+                        font-weight: 600
+                        color: #B1E5FC
+                        line-height: 40px
+                        small
+                            display: inline
+                            font-size: 24px
+                            font-weight: 400
+                            line-height: 30px
+                            margin-bottom: 15px
+                            text-transform: capitalize
+    .rcstr_sts_acdng_dtl
+        .acdng_btn_wppr
+            display: flex
+            flex-wrap: wrap
+            margin-bottom: 30px
+            ul 
+                width: 100%
+                display: flex
+                margin-bottom: 20px
+                padding-bottom: 0px
+                align-items: flex-start
+                justify-content: flex-start
+                border-bottom: 1px solid rgba(211, 204, 204, 0.26)
+                li 
+                    cursor: pointer
+                    font-size: 18px
+                    padding: 0 10px
+                    font-weight: 300
+                    position: relative
+                    margin-right: 40px
+                    line-height: normal
+                    margin-bottom: 20px
+                    color: rgba(255, 255, 255, 0.44)
+                    &:hover                    
+                        color: $white
+                        &::before
+                            width: 100%
+                            visibility: visible
+                    &::before
+                        @include aftrBeforBX(0%,5px,auto,0,-85%,0)
+                        background: #FF99A5
+                        transition: all 1s
+                        visibility: hidden
+                .lnk_actv
+                    color: $white
+                    &::before
+                        visibility: visible
+                        width: 100%
+            .acdng_fltr_wppr
+                display: flex
+                margin-top: 10px
+                align-items: flex-start
+                justify-content: space-between
+                .srch_wppr
+                    justify-content: flex-start
+                    align-items: center
+                    padding: 10px 20px
+                    border-radius: 8px
+                    position: relative
+                    max-width: 272px
+                    display: flex
+                    &::before
+                        @include aftrBeforBX(100%,100%,0,0,0,0)
+                        z-index: -1
+                        background: url("../images/index/search_bar.svg") center center no-repeat
+                        background-size: contain 
+                    .srch_icn,
+                    .srch_txt
+                        background: transparent
+                        border: 0
+                    .srch_icn
+                        margin-right: 5px
+                        color: #76755e
+                        display: block
+                        font-size: 16px
+                        padding: 0
+                        img 
+                            width: 15px
+                            display: block
+                        &:hover
+                            color: $ThemClr
+                    .srch_txt
+                        padding: 5px
+                        color: $white
+                        line-height: 26px
+                .date_pckr_wppr
+                    color: $white
+                    position: relative
+                    border-radius: 8px
+                    padding: 10px 20px
+                    padding-left: 50px
+                    background: #272B30
+                    border: 1px solid #4F5053
+                    &::before
+                        @include aftrBeforBX(20px,20px,11px,0,0,15px)
+                        background: url("../images/index/clndr.svg") center center no-repeat
+                        background-size: cover
+                    .sctdata 
+                        display: flex
+                        align-items: flex-start
+                        justify-content: space-between
+                        input
+                            border: 0
+                            width: 110px
+                            padding: 0
+                            color: $white
+                            font-size: 16px
+                            text-align: center
+                            background: transparent
+                            &::placeholder
+                                color: $white
+                        em
+                            display: inline-block
+                            margin: 0 5px
+
+        .acdng_tbl_data_wppr
+            .acdng_tbl_data
+                height: calc( 100vh - 420px)
+                padding-right: 5px
+                overflow: auto
+                &::-webkit-scrollbar 
+                    width: 5px
+                    height: 5px
+                &::-webkit-scrollbar-track 
+                    box-shadow: inset 0 0 6px rgb(169 169 169)
+                &::-webkit-scrollbar-thumb 
+                    background-color: $ThemClr
+                    outline: 1px solid $ThemClr
+                table
+                    width: 100%
+                    thead
+                        z-index: 1
+                        tr
+                            th
+                                position: sticky
+                                z-index: 2
+                                top: 0
+                    tbody
+                        z-index: 0
+                        position: relative
+                        vertical-align: middle
+                        border-color: inherit
+                    tr
+                        border-bottom: 1px solid  rgba(211, 204, 204, 0.26)
+                        &:last-child,
+                        &:nth-child(2n - 2),
+                        &:nth-last-child(2)                           
+                            border-bottom: 0 
+                        th,
+                        td
+                            text-align: center
+                            font-weight: 400
+                            font-size: 16px
+                            padding: 20px
+                            color: $white
+                            &:nth-child(1)
+                                text-align: left    
+                        th 
+                            background: #27282d                            
+                        td 
+                            color: #A4A4A4
+                            font-size: 14px
+                            .tr_sts
+                                display: flex
+                                align-items: center     
+                                justify-content: center                       
+                                p 
+                                    width: 120px
+                                    padding: 8px
+                                    font-size: 12px
+                                    font-weight: 400
+                                    color: #A3EE80
+                                    border-radius: 50px
+                                    background: rgba(39, 174, 96, 0.1)
+                                .pndg
+                                    color: #FF9559
+                                    background: rgba(255, 149, 89, 0.23)
+                            .tck_btn
+                                font-size: 3px
+                                color: #A4A4A4
+                                padding: 6px 10px
+                                border-radius: 20px
+                                letter-spacing: 2px
+                                background: transparent
+                                border: 1px solid #A4A4A4
+                                &:hover
+                                    color: $ThemClr
+                                    border-color: $ThemClr 
+                            .actv_lst
+                                color: $ThemClr
+                                border-color: $ThemClr 
+                                
+                    .drp_dwn
+                        // display: none
+                        td                 
+                            padding: 0            
+                            .trk_wppr
+                                background: linear-gradient(45deg, rgb(45 49 54 / 48%) 0%, rgb(70 73 78 / 74%) 40%, rgb(217 217 217 / 18%) 100%)                                  
+                                border-bottom: 1px solid rgba(211, 204, 204, 0.26)
+                                display: none
+                                .trk_data_lst
+                                    padding: 30px 
+                                    margin-bottom: 30px
+                                    border-bottom: 1px solid rgba(211, 204, 204, 0.26)
+                                    &:last-child
+                                        margin-bottom: 0
+                                        border: 0
+                                    .trk_hdng
+                                        margin-bottom: 20px                                        
+                                        h4 
+                                            width: 100%
+                                            padding: 10px
+                                            color: #FFF
+                                            font-size: 18px
+                                            max-width: 200px
+                                            font-weight: 400
+                                            text-align: center
+                                            position: relative
+                                            line-height: normal
+                                            display: inline-block
+                                            &::before
+                                                @include aftrBeforBX(100%,100%,0%,0,0,0%)
+                                                background: url("../images/index/recaster_id.svg") center center no-repeat
+                                                background-size: contain
+                                                z-index: -1
+                                    .trck_lst_itm
+                                        display: flex
+                                        align-items: flex-start
+                                        justify-content: flex-
+                                        .trk_clm_2
+                                            width: 20%
+                                            z-index: 1
+                                            display: block
+                                            position: relative
+                                            &:last-child
+                                                &::before,
+                                                &::after 
+                                                    display: none
+                                            &::before
+                                                @include aftrBeforBX(100%,2px,16px,0,0,auto)
+                                                background: #52574F
+                                                z-index: -1
+                                            &::after                                                
+                                                @include aftrBeforBX(0%,2px,16px,auto,0,0)
+                                                background: $ThemClr
+                                                transition: all 1s
+                                                z-index: -1
+                                            .trck_icn
+                                                width: 33px
+                                                height: 33px
+                                                display: flex
+                                                border-radius: 50%
+                                                align-items: center
+                                                margin-bottom: 10px
+                                                background: #484E56
+                                                justify-content: center
+                                                border: 1px solid transparent
+                                                img 
+                                                    width: 20px
+                                            .title
+                                                display: flex
+                                                align-items: center
+                                                justify-content: flex-start
+                                                p 
+                                                    color: $white
+                                                    font-size: 15px
+                                                    font-weight: 400
+                                                    line-height: normal
+                                                .trck_ckng
+                                                    width: 15px
+                                                    height: 15px
+                                                    margin-left: 15px
+                                                    position: relative
+                                                    .trck_chck_txt
+                                                        opacity: 0
+                                                        z-index: 1
+                                                        cursor: pointer
+                                                        position: absolute
+                                                        &:checked ~ label
+                                                            &::before
+                                                                display: block
+                                                        &:hover ~ label
+                                                            background: $white
+                                                            
+                                                    label
+                                                        width: 100%
+                                                        height: 100%
+                                                        display: block
+                                                        position: relative
+                                                        border: 0.304px solid #666
+                                                        background: linear-gradient(45deg,  rgba(82,85,89,1) 0%,rgba(70,73,78,1) 40%,rgba(55,58,63,1) 100%)
+                                                        &::before
+                                                            @include aftrBeforBX(16px,7px,-1px,0,0,2px)
+                                                            border-bottom: 1px solid $ThemClr 
+                                                            border-left: 1px solid $ThemClr
+                                                            transform: rotate(-45deg)
+                                                            display: none
+                                        .trk_cmplt
+                                            &::after
+                                                width: 100%
+                                            // &::before
+                                                // display: none
+                                            .trck_icn
+                                                border-color: $ThemClr
+                                            .title
+                                                p 
+                                                    color: $ThemClr
+                                                .trck_ckng
+                                                    label::before
+                                                        display: block
+
+
+
+
+
+
+                                                
+
+
+
+
+
+
+
+
+
+            
+
+

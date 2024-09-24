@@ -1,0 +1,280 @@
+[{
+    "PermsnNmData" :[
+        {
+            "id": 1,
+            "title": "Menu Permission",
+            "Animals" :[
+                {
+                    "id": 1,
+                    "Menutitle": "Category",
+                    "Vists" :[
+                        {
+                            "id": 1,
+                            "create": "Create",
+                            "editctgry": "Edit",
+                            "readctgry": "Read",
+                            "deletectgry": "Delete"
+                        }
+                    ] 
+                },
+                {
+                    "id": 2,
+                    "Menutitle": "User List",
+                    "Vists" :[
+                        {
+                            "id": 1,
+                            "create": "Create",
+                            "editctgry": "Edit",
+                            "readctgry": "Read",
+                            "deletectgry": "Delete"
+                        }
+                    ] 
+                },
+                {
+                    "id": 3,
+                    "Menutitle": "Home setting",
+                    "Vists" :[
+                        {
+                            "id": 1,
+                            "create": "Create",
+                            "editctgry": "Edit",
+                            "readctgry": "Read",
+                            "deletectgry": "Delete"
+                        }
+                    ] 
+                },
+                {
+                    "id": 4,
+                    "Menutitle": "Tiket",
+                    "Vists" :[
+                        {
+                            "id": 1,
+                            "create": "Create",
+                            "editctgry": "Edit",
+                            "readctgry": "Read",
+                            "deletectgry": "Delete"
+                        }
+                    ] 
+                },
+                {
+                    "id": 5,
+                    "Menutitle": "Active Log",
+                    "Vists" :[
+                        {
+                            "id": 1,
+                            "create": "Create",
+                            "editctgry": "Edit",
+                            "readctgry": "Read",
+                            "deletectgry": "Delete"
+                        }
+                    ] 
+                },
+                {
+                    "id": 6,
+                    "Menutitle": "VOD",
+                    "create": "Video on Demand",
+                    "Vists" :[
+                        {
+                            "id": 1,
+                            "create": "Video on Demand",
+                            "editctgry": "Bulk Upload",
+                            "readctgry": "Upload Media",
+                            "deletectgry": "Queue Manager"
+                        }
+                    ] 
+                },
+                {
+                    "id": 7,
+                    "Menutitle": "Plan",
+                    "Vists" :[
+                        {
+                            "id": 1,
+                            "create": "Plan Detail",
+                            "editctgry": "Subscription Detail",
+                            "readctgry": "",
+                            "deletectgry": ""
+                        }
+                    ] 
+                },
+                {
+                    "id": 8,
+                    "Menutitle": "Images",
+                    "Vists" :[
+                        {
+                            "id": 1,
+                            "create": "Slider Images",
+                            "editctgry": "Popup Images",
+                            "readctgry": "Banner",
+                            "deletectgry": ""
+                        }
+                    ] 
+                },
+                {
+                    "id": 9,
+                    "Menutitle": "Notification",
+                    "Vists" :[
+                        {
+                            "id": 1,
+                            "create": "Send Notification",
+                            "editctgry": "Notification List",
+                            "readctgry": "Mail",
+                            "deletectgry": ""
+                        }
+                    ] 
+                },
+                {
+                    "id": 10    ,
+                    "Menutitle": "Setting",
+                    "Vists" :[
+                        {
+                            "id": 1,
+                            "create": "Create",
+                            "editctgry": "Edit",
+                            "readctgry": "Read",
+                            "deletectgry": "Delete"
+                        }
+                    ] 
+                }
+            ] 
+        }
+    ],
+    "PermsnctgryData" :[
+        {
+            "id": 1,
+            "title": "Menu Permission",
+            "Animals" :[
+                {
+                    "id": 1,
+                    "Menutitle": "Category",
+                    "Vists" :[
+                        {
+                            "id": 1,
+                            "create": "Create",
+                            "editctgry": "Edit",
+                            "readctgry": "Read",
+                            "deletectgry": "Delete"
+                        }
+                    ] 
+                },
+                {
+                    "id": 2,
+                    "Menutitle": "User List",
+                    "Vists" :[
+                        {
+                            "id": 1,
+                            "create": "Create",
+                            "editctgry": "Edit",
+                            "readctgry": "Read",
+                            "deletectgry": "Delete"
+                        }
+                    ] 
+                },
+                {
+                    "id": 3,
+                    "Menutitle": "Home setting",
+                    "Vists" :[
+                        {
+                            "id": 1,
+                            "create": "Create",
+                            "editctgry": "Edit",
+                            "readctgry": "Read",
+                            "deletectgry": "Delete"
+                        }
+                    ] 
+                },
+                {
+                    "id": 4,
+                    "Menutitle": "Tiket",
+                    "Vists" :[
+                        {
+                            "id": 1,
+                            "create": "Create",
+                            "editctgry": "Edit",
+                            "readctgry": "Read",
+                            "deletectgry": "Delete"
+                        }
+                    ] 
+                },
+                {
+                    "id": 5,
+                    "Menutitle": "Active Log",
+                    "Vists" :[
+                        {
+                            "id": 1,
+                            "create": "Create",
+                            "editctgry": "Edit",
+                            "readctgry": "Read",
+                            "deletectgry": "Delete"
+                        }
+                    ] 
+                },
+                {
+                    "id": 6,
+                    "Menutitle": "VOD",
+                    "create": "Video on Demand",
+                    "Vists" :[
+                        {
+                            "id": 1,
+                            "create": "Video on Demand",
+                            "editctgry": "Bulk Upload",
+                            "readctgry": "Upload Media",
+                            "deletectgry": "Queue Manager"
+                        }
+                    ] 
+                },
+                {
+                    "id": 7,
+                    "Menutitle": "Plan",
+                    "Vists" :[
+                        {
+                            "id": 1,
+                            "create": "Plan Detail",
+                            "editctgry": "Subscription Detail",
+                            "readctgry": "",
+                            "deletectgry": ""
+                        }
+                    ] 
+                },
+                {
+                    "id": 8,
+                    "Menutitle": "Images",
+                    "Vists" :[
+                        {
+                            "id": 1,
+                            "create": "Slider Images",
+                            "editctgry": "Popup Images",
+                            "readctgry": "Banner",
+                            "deletectgry": ""
+                        }
+                    ] 
+                },
+                {
+                    "id": 9,
+                    "Menutitle": "Notification",
+                    "Vists" :[
+                        {
+                            "id": 1,
+                            "create": "Send Notification",
+                            "editctgry": "Notification List",
+                            "readctgry": "Mail",
+                            "deletectgry": ""
+                        }
+                    ] 
+                },
+                {
+                    "id": 10    ,
+                    "Menutitle": "Setting",
+                    "Vists" :[
+                        {
+                            "id": 1,
+                            "create": "Create",
+                            "editctgry": "Edit",
+                            "readctgry": "Read",
+                            "deletectgry": "Delete"
+                        }
+                    ] 
+                }
+            ] 
+        }
+    ]
+}]

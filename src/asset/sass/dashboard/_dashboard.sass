@@ -1,0 +1,498 @@
+.hdr_hdng-wppr,
+.dshbrd_wppr,
+.top_hd_wppr,
+.drp_dwn_wppr,
+.usr_prfl_wppr,
+.srch_prfl_wppr,
+.dshbrd_cnct_wppr,
+.clnt_wppr,
+.dshbrd_cnct_wppr,
+.prgsbr_wppr,
+.spc_wppr,
+.aws_cncnt_wppr,
+.aws_cncnt_dtl_wppr,
+.aws_cncnt_icn,
+.aws_cncnt_icn img,
+.aws_prgsbr_dtl,
+.aws_usr_dtl_wppr,
+.pg_cnct_wppr,
+.cdn_cnct_wppr 
+    width: 100%
+    display: block
+    position: relative
+.dshbrd_wppr
+    height: 100%
+    overflow: auto
+    padding: 30px 0
+.top_hd_wppr
+    top: 0
+    z-index: 1
+    display: flex
+    // position: fixed
+    padding: 15px 0
+    background: $white
+    align-items: center   
+    // width: calc( 100% - 10% )
+    width: 100%
+    box-shadow: 0 0 20px #d1d1d1
+    @include respond-to(screen-1600)
+        padding: 10px 0
+        // width: calc( 100% - 5% )
+    .container
+        .row
+            padding: 0 15px
+    .srch_prfl_wppr
+        width: 20%
+        max-width: 380px
+        padding: 8px 15px
+        border-radius: 5px
+        background: #f7f7f7
+        box-shadow: 0 4px 8px #0000001f
+        @include respond-to(screen-1600)
+            width: 27%
+            padding: 0px 10px
+        .srch_icn
+            border: 0
+            padding: 0
+            margin-right: 15px
+            background: transparent
+            @include respond-to(screen-1600)
+                margin-right: 10px
+            img 
+                width: 16px
+                opacity: .5
+                display: block
+                filter: brightness(0)
+        .srch_txt_bx
+            background: transparent
+            line-height: 24px
+            font-size: 16px
+            width: 100%
+            border: 0
+    .usr_prfl_wppr 
+        .notfctn_wppr
+            align-items: center
+            margin-right: 30px
+            display: flex
+            @include respond-to(screen-1600)
+                margin-right: 20px
+            .ntfctn_drp_dwn
+                display: none
+            .ntfctn_icn
+                width: 24px
+                height: 24px
+                display: flex
+                position: relative
+                align-items: center
+                justify-content: center
+                span
+                    top: 0
+                    right: 0
+                    width: 15px
+                    height: 15px
+                    display: flex
+                    color: $white
+                    font-size: 10px
+                    font-weight: 700
+                    position: absolute
+                    border-radius: 50%
+                    align-items: center
+                    background: #EB5757
+                    justify-content: center
+                    border: 1px solid $white
+                img 
+                    width: 100%
+                    display: block
+        .prfl_usr
+            display: flex
+            cursor: pointer
+            position: relative
+            align-items: center
+            padding-right: 25px
+            justify-content: flex-start
+            &::before
+                @include aftrBeforBX(0px,0px,50%,5px,0,auto)
+                transform: translateY(-50%)
+                border-right: 5px solid transparent
+                border-left: 5px solid transparent
+                border-top: 5px solid #bbbbbb                
+            .prfl_icn
+                width: 40px
+                height: 40px
+                display: block
+                margin-right: 10px
+                position: relative
+                @include respond-to(screen-1600)
+                    width: 35px
+                    height: 35px
+                img 
+                    width: 100%
+                    height: 100%
+                    display: block
+                    object-fit: cover
+                    border-radius: 50%
+            .lgot_menu
+                right: 0
+                top: 100%
+                z-index: 9
+                width: 210px
+                display: flex
+                padding: 5px 0px
+                position: absolute
+                border-radius: 5px
+                background: $white
+                align-items: center
+                transform: translateY(10px)
+                justify-content: flex-start
+                box-shadow: 0 4px 8px #0000001f
+                ul 
+                    width: 100%
+                    display: block
+                    li
+                        width: 100%
+                        display: block
+                        position: relative
+                        a 
+                            width: 100%
+                            display: flex
+                            padding: 5px 10px
+                            align-items: center
+                            justify-content: center
+                            &:hover
+                                background: #dc323a0f
+                            em 
+                                width: 15px
+                                display: block
+                                margin-right: 8px
+                                position: relative
+                                img 
+                                    display: block
+                                    width: 100%
+                            p
+                                width: 100%
+                                font-size: 14px
+
+            .title
+                width: calc(100% - 50px)
+                h5 
+                    color: var(--Greys-Blue-Grey-900, #151D48)
+                    text-transform: capitalize
+                    white-space: nowrap 
+                    line-height: 22px
+                    font-weight: 500
+                    font-size: 15px
+                    @include respond-to(screen-1600)
+                        font-size: 13px
+                        line-height: 20px
+                small 
+                    display: block
+                    font-size: 12px
+                    font-weight: 500
+                    position: relative
+                    color: var(--Greys-Blue-Grey-700, #737791)
+.pg_cnct_wppr
+    background: #FBF6F2    
+.dshbrd_cnct_wppr
+    padding: 0
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-start
+    align-content: flex-start
+    justify-content: flex-start
+    @include respond-to(screen-1600)
+        .col-sm-12
+            margin-bottom: 20px !important
+    .hdn_wppr
+        h1 
+            font-weight: 700
+            @include respond-to(screen-1600)
+                font-size: 24px
+                line-height: 30px
+        small 
+            display: block
+            font-size: 18px
+            line-height: 20px
+            margin-left: 10px
+            @include respond-to(screen-1600)
+                font-size: 14px
+                line-height: 20px
+    .drp_dwn_wppr
+        width: auto
+        z-index: 0
+        position: relative
+        &::before
+            @include aftrBeforBX(0,0,50%,10px,0,auto)
+            border-right: 5px solid transparent
+            border-left: 5px solid transparent
+            border-top: 5px solid $black
+            transform: translateY(-50%)
+            opacity: .3
+            z-index: 2
+        select
+            border: 0
+            z-index: 1
+            width: auto
+            cursor: pointer
+            font-size: 14px
+            appearance: none
+            line-height: 24px
+            padding: 5px 15px 
+            position: relative
+            background: $white
+            border-radius: 3px
+            padding-right: 30px
+            border: 1px solid rgba(217, 217, 217, 0.51)    
+            @include respond-to(screen-1600)
+                padding: 5px 10px
+                padding-right: 25px
+                option
+                    font-size: 13px
+    .clnt_crt_wppr
+        padding: 0px
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-start
+        .title
+            h5 
+                color: var(--Primary-Dark-Shade, #05004E)
+                font-size: 22px
+                font-weight: 700
+                line-height: 32px
+                @include respond-to(screen-1600)
+                    font-size: 18px
+                    line-height: 26px
+            p 
+                color: var(--Greys-Blue-Grey-700, #737791)
+                font-size: 16px
+                font-weight: 400
+                line-height: 30px
+                @include respond-to(screen-1600)
+                    font-size: 14px
+                    line-height: 20px
+            small 
+                display: block
+                font-size: 20px
+                font-weight: 700
+                line-height: 30px
+                position: relative
+                margin-bottom: 15px   
+                @include respond-to(screen-1600)
+                    font-size: 18px
+                    line-height: 26px    
+        .clnt_wppr
+            display: flex
+            align-items: center
+            justify-content: space-between
+            .clnt_stus
+                width: 24%
+                display: flex
+                padding: 15px 30px
+                background: $white
+                border-radius: 10px
+                align-items: flex-end
+                justify-content: flex-start
+                @include respond-to(screen-1600)
+                    padding: 8px 20px
+                .clnt_icn
+                    height: 60px
+                    display: flex
+                    width: 73.05px
+                    position: relative
+                    border-radius: 50%
+                    align-items: center
+                    justify-content: center
+                    @include respond-to(screen-1600)
+                        width: 50px
+                    span 
+                        width: 100%
+                        height: 100%
+                        display: block
+                        position: relative
+                    img 
+                        width: 100%
+                        height: 100%
+                        display: block
+                .title
+                    h6 
+                        color: var(--Greys-Blue-Grey-900, #151D48)
+                        font-size: 28px
+                        font-weight: 600
+                        line-height: 40px
+                        @include respond-to(screen-1600)
+                            font-size: 20px
+                            line-height: 30px
+                    p 
+                        color: #42516694
+                        font-size: 16px
+                        font-weight: 500
+                        line-height: 24px
+                        @include respond-to(screen-1600)
+                            font-size: 14px
+                            line-height: 20px
+    .str_bx_wprr
+        border-radius: 10px
+        background: $white
+        padding: 20px
+        .title
+            span 
+                width: 60px
+                height: 60px
+                display: block
+                position: relative
+                @include respond-to(screen-1600)
+                    width: 40px
+                    height: 40px
+                img 
+                    width: 100%
+                    display: block
+        .prgsbr_wppr
+            @include respond-to(screen-1600)
+                .my-4
+                    margin-top: 0.6rem!important
+                    margin-bottom: 0.6rem!important
+            .prgs_br_wppr
+                width: 200px
+                margin: 10px auto  
+                @include respond-to(screen-1600)
+                    width: 150px
+                    margin: 0px auto
+            .spc_wppr
+                display: flex
+                align-items: flex-start
+                justify-content: space-between
+                .title
+                    margin-bottom: 0
+                    width: auto
+                    h4
+                        font-size: 20px
+                        font-weight: 700
+                        line-height: 30px
+                        text-align: center
+                        em 
+                            font-size: 14px
+                            font-weight: 500
+                            line-height: 24px
+                    p 
+                        font-size: 14px
+                        font-weight: 500
+                        line-height: 20px
+                        text-align: center
+            .nas_img
+                width: 130px
+                display: block
+                margin: 0 auto
+                position: relative   
+                // @include respond-to(screen-1600)
+                //     width: 100px         
+                img 
+                    width: 100%
+                    display: block
+    .trdng_usr_wppr
+        border-radius: 10px
+        background: $white
+        padding: 20px 0
+        .title
+            h5 
+                padding-left: 20px
+        .cdn_cnct_wppr
+            display: flex
+            flex-wrap: wrap
+            align-items: flex-start
+            justify-content: flex-start     
+            .col-12   
+                &:nth-child(2)
+                    .trscdng_crt
+                        background: #BFEBFF
+                        .title 
+                            small,
+                            h4 
+                                color: #008CCC
+                &:nth-child(3)
+                    .trscdng_crt
+                        background: #E7C0C9
+                        .title 
+                            small,
+                            h4 
+                                color: #D80032
+                &:nth-child(4)
+                    .trscdng_crt
+                        background: #F3E8FF
+                        .title 
+                            small,
+                            h4 
+                                color: #7E22CE
+            .trscdng_crt
+                display: flex
+                border-radius: 5px
+                align-items: flex-end
+                background: #dcfce7
+                .title
+                    margin-bottom: 0
+                    padding: 10px 20px
+                    small
+                        width: 100%
+                        display: block
+                        font-size: 16px
+                        color: #16A34A
+                        font-weight: 400
+                        position: relative
+                        @include respond-to(screen-1600)
+                            font-size: 14px
+                            line-height: 20px
+                    h4 
+                        color: #16A34A
+                        font-size: 24px
+                        @include respond-to(screen-1600)
+                            font-size: 20px
+                            line-height: 24px
+                .icn_img
+                    width: 100px
+                    display: block
+                    padding-right: 5px
+                    position: relative
+                    @include respond-to(screen-1600)
+                        width: 80px
+                    img
+                        width: 100%
+                        display: block
+                        margin-left: auto 
+       
+
+
+            
+
+
+
+
+
+
+
+
+                        
+                            
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

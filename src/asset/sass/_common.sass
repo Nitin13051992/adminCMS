@@ -1,0 +1,96 @@
+body,input,textarea,button,p,a,li,select,
+h1,h2,h3,h4,h5,h6
+    font-family: 'Poppins', sans-serif
+    font-size: 16px
+    line-height: 1.5
+    color: $black
+    letter-spacing: 1px
+b,strong
+    // font-family: $font-bold
+
+.container
+    width: 95%
+    max-width: 100%
+    margin: 0 auto
+    padding: 0
+.container-fluid
+    width: 100%
+
+.row
+    margin: 0  
+
+.td
+    display: table
+    width: 100%
+    height: 100%
+    .td-mid
+        display: table-cell
+        vertical-align: middle
+    .td-bttm
+        display: table-cell
+        vertical-align: bottom
+
+
+
+@mixin title($align,$color,$margnBtm,$btmBar,$barColor)    
+    margin-bottom: $margnBtm
+    position: relative
+    @if $btmBar 
+        padding-bottom: 20px
+        &:after 
+            @if $align == center
+                @include aftrBeforBX(50px,4px,auto,auto,0px,50%)
+                transform: translateX(-50%)
+                background: $barColor
+            @if $align == left
+                @include aftrBeforBX(50px,4px,auto,auto,0px,0px)
+                transform: translateX(0)
+                background: $barColor
+    h1,h2,h3,h4,h5,h6
+        font-size: 36px
+        color: $color
+        text-align: $align
+        @include respond-to(screen-767)
+            font-size: 22px
+    p 
+        color: $color 
+        text-align: $align
+
+@mixin button ($height,$width,$border-color,$color,$bg,$position)
+    width: $width
+    height: $height
+    border: 1px solid $border-color
+    color: $color 
+    background: $bg
+    transition: all .5s
+    border-radius: calc(#{$height} * 2)
+    line-height: calc(#{$height} - 2px)
+    text-align: center
+    display: block 
+    cursor: pointer
+    @if $position == center 
+        margin: 0 auto
+    @if $position == left 
+        float: left
+    @if $position == right 
+        float: right
+    @if $bg == $blue
+        color: $white
+    &:hover
+        @if $bg == transparent
+            background: darken($blue, 8%)
+            color: $white
+            border: 1px solid darken($blue, 8%)
+        @else 
+            background: darken($bg, 18%) 
+            border: 1px solid darken($bg, 8%)
+            
+@mixin placeholder ($color)
+    &::-webkit-input-placeholder 
+        color: $color
+    &::-moz-placeholder
+        color: $color
+    &:-ms-input-placeholder 
+        color: $color
+    &:-moz-placeholder
+        color: $color

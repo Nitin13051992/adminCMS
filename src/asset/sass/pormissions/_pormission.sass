@@ -1,0 +1,285 @@
+.mdul_cntcnt_wppr,
+.mdul_hdng_wppr,
+.mdl_wdt,
+.usr_prmtn,
+.usr_mmbr_wppr,
+.rol_drp_dwn,
+.prmtn_wppr
+    width: 100%
+    display: block
+    position: relative
+.usr_prmtn
+    width: auto
+    display: flex
+    flex-wrap: wrap
+    padding: 0px 15px
+    background: $white
+    border-radius: 12px
+    align-content: flex-start
+    justify-content: space-between    
+    .usr_mmbr_wppr
+        width: 50%
+        small
+            margin-bottom: 5px
+            position: relative
+            font-weight: 500
+            font-size: 14px
+            display: block
+            color: #666
+        h5
+            opacity: .7
+            font-size: 16px
+            font-weight: 500
+            line-height: 24px
+    .rol_drp_dwn
+        width: 50%
+        h6
+            margin-bottom: 5px
+            line-height: 20px
+            font-weight: 500
+            font-size: 14px
+            display: block
+            color: #666
+        .frm_txt
+            box-shadow: 0 1px 4px #f0f0f0
+            border: 1px solid #dfdfdf
+            background: #fbf6f2
+            border-radius: 5px
+            padding: 5px 15px 
+            font-size: 16px
+            font-weight: 500
+            line-height: 24px
+            color: #666
+            width: 100%
+    .sbmt_wppr
+        justify-content: flex-end
+        margin-top: 30px             
+        display: flex
+        button
+            box-shadow: 0 3px 6px rgb(0 0 0 / 36%)
+            background: $ThemClr
+            border-radius: 5px
+            line-height: 28px
+            color: $white
+            padding: 8px
+            width: 30%
+            border: 0
+            &:hover
+                background: #b7262d
+.mdul_cntcnt_wppr
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-start
+    height: calc(100vh - 175px)
+    justify-content: flex-start
+    .title
+        margin-bottom: 10px        
+        &::before
+            @include aftrBeforBX(calc(100% - 300px),2px,50%,0,0,auto)
+            background: #EEEEEE
+            transform: translateY(-50%)   
+        h2 
+            font-size: 20px
+            padding: 0 16px
+            font-weight: 500
+            line-height: 26px
+            position: relative
+        fieldset
+            width: auto
+            margin: 0
+            .fld_chck_bx
+                top: 50%
+                left: 0px
+                opacity: 0
+                z-index: 1
+                width: 15px
+                width: 100%
+                height: 15px
+                height: 100%
+                cursor: pointer
+                position: absolute
+                transform: translateY(-50%)
+                &:hover ~  label,
+                &:checked ~ label
+                    background: $ThemClr
+                    border: $ThemClr
+                &:checked ~ label::after
+                    transform: translateY(-50%) translateX(23px)
+            label
+                width: 40px
+                height: 16px
+                display: block 
+                position: relative
+                border-radius: 50px
+                background: #d8d8d8
+                border: 1.5px solid #d8d8d8
+                &::after                                                                            
+                    @include aftrBeforBX(14px,14px,50%,0,0,1px)
+                    box-shadow: 0 0 5px #adadad
+                    transform: translateY(-50%)
+                    transition: all .5s
+                    background: $white
+                    border-radius: 50%
+                      
+    .prmtn_wppr
+        height: calc( 100% - 36px )
+        display: flex
+        flex-wrap: wrap
+        overflow: auto  
+    .mdul_cntcnt_row                    
+        width: 25%
+        display: flex
+        padding: 0 15px
+        .mdul_hdng_wppr
+            box-shadow: 0px 1px 6px rgb(0 0 0 / 10%)
+            border: 2px solid #e3e3e3bf
+            border-radius: 5px
+            .title
+                margin: 0
+                padding: 10px
+                display: flex
+                align-items: center
+                background: #FDE6E7
+                justify-content: space-between
+                &::before
+                    display: none
+                h3
+                    font-size: 16px
+                    font-weight: 500
+                    line-height: 21px
+                .prc_wppr
+                    display: flex
+                    align-items: center
+                    justify-content: flex-start
+                    p 
+                        color: #53C500
+                        font-weight: 500
+                        margin-right: 15px
+            .add_mdl_wppr
+                padding: 15px 
+                background: #F9F9F9
+                height: calc( 100% - 40px)
+                ul 
+                    width: 100%
+                    display: block
+                    position: relative
+                    li 
+                        display: flex
+                        margin-bottom: 6px
+                        align-items: center
+                        justify-content: space-between
+                        &:hover
+                            opacity: 1
+                            .txt_dtl_wppr
+                                z-index: 3
+                                small
+                                    cursor: auto
+                                .cntc_hvr_dtal
+                                    visibility: visible
+                                    p 
+                                        cursor: auto
+                                        z-index: 1
+                        &:last-child
+                            margin-bottom: 0
+                        small
+                            width: 100%
+                            display: flex
+                            font-size: 13px
+                            font-weight: 400
+                            line-height: 20px
+                            position: relative
+                            cursor: context-menu
+                            text-transform: capitalize
+                        p 
+                            width: 25%
+                            display: flex
+                            font-size: 13px
+                            font-weight: 700
+                            position: relative
+                            padding-left: 10px
+                        .txt_dtl_wppr
+                            z-index: 2
+                            width: 100%
+                            display: flex
+                            position: relative
+                            .cntc_hvr_dtal
+                                box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.18)
+                                border-radius: 10px
+                                visibility: hidden
+                                background: $white
+                                position: absolute
+                                padding: 20px
+                                width: 400px
+                                top: 20px
+                                &::before
+                                    @include aftrBeforBX(0,0,-9px,0px,0,10px)
+                                    border-right: 10px solid transparent   
+                                    border-left: 10px solid transparent 
+                                    border-bottom: 10px solid $white
+                                h6 
+                                    margin-bottom: 5px
+                                    line-height: 24px
+                                    font-weight: 500
+                                    font-size: 16px
+                                p 
+                                    padding: 0
+                                    width: 100%
+                                    color: #666
+                                    font-weight: 300
+                        fieldset 
+                            .fld_chck_bx
+                                &:checked ~ label::after
+                                    transform: translateY(-50%) translateX(19px)
+                            label
+                                width: 36px
+                    .disable_fld
+                        opacity: .4
+                        small,fieldset .fld_chck_bx,p
+                            z-index: -1
+                            cursor: no-drop                        
+                    .slct_all
+                        fieldset 
+                            label
+                                background: $ThemClr
+                                border: $ThemClr
+                                &::after
+                                    display: block
+            fieldset
+                width: auto
+                margin: 0
+                .fld_chck_bx
+                    top: 50%
+                    left: 0px
+                    opacity: 0
+                    z-index: 1
+                    width: 15px
+                    width: 100%
+                    height: 15px
+                    height: 100%
+                    cursor: pointer
+                    position: absolute
+                    transform: translateY(-50%)
+                    &:hover ~  label,
+                    &:checked ~ label
+                        background: $ThemClr
+                        border: $ThemClr
+                    &:checked ~ label::after
+                        transform: translateY(-50%) translateX(23px)
+                label
+                    width: 40px
+                    height: 16px
+                    display: block 
+                    position: relative
+                    border-radius: 50px
+                    background: #d8d8d8
+                    border: 1.5px solid #d8d8d8
+                    &::after                                                                            
+                        @include aftrBeforBX(14px,14px,50%,0,0,1px)
+                        box-shadow: 0 0 5px #adadad
+                        transform: translateY(-50%)
+                        transition: all .5s
+                        background: $white
+                        border-radius: 50%
+        .avt_tb_itm
+            border-color: $ThemClr
+

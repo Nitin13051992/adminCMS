@@ -1,0 +1,235 @@
+footer,
+.FotrSctn_wppr,
+.FtrContct_wprr,
+.FtrMenuSctn_wppr,
+.ContactTxt-Wppr,
+.ContcMap,
+.FtrMenu-Wppr,
+.CopyRght-Wppr
+    width: 100%
+    position: relative
+    display: block
+    @include respond-to(screen-767)
+
+
+
+.FtrBg-Wppr
+    background: $ThemClr
+    padding: 30px 0
+    &::before
+        @include aftrBeforBX(100%,100%,0px,0px,0,0)
+        background: url(../images/Ftr-bg.png) center center no-repeat
+        background-size: cover
+        background-attachment: fixed
+        opacity: .2
+.FtrContcBg
+    background: $white
+    padding: 50px 0 0
+.FotrSctn_wppr
+    .FtrContct_wprr
+        display: flex
+        align-items: flex-start
+        justify-content: flex-start
+
+        .ContactTxt-Wppr
+            overflow: hidden
+            .title 
+                transition: all 1s
+                transform: translateX(-100%)
+                transition-delay: 1000ms
+                h6,
+                small,
+                ul li a,
+                ul li,
+                address 
+                    color: $ThemClr
+                small 
+                    width: 100%
+                    display: block
+                    position: relative
+                    margin: 20px 0
+                    font-size: 40px
+                    line-height: 40px
+                    font-family: $font-NeusaSmBld
+                address,
+                ul li 
+                    width: 70%
+                    display: flex
+                    font-size: 16px
+                    line-height: 20px
+                    margin-bottom: 20px
+                    font-weight: 300
+                    color: #666666
+                ul 
+                    width: 70%
+                    display: block
+                    position: relative
+                    li 
+                        width: 100%
+                        align-items: center
+                        a 
+                            margin-left: 10px
+                            color: #666666
+                            &:hover
+                                color: $black
+        .ContcMap
+            overflow: hidden
+            iframe
+                min-height: 280px
+                transition: all 1s
+                transform: translateX(100%)
+                transition-delay: 1000ms
+
+
+.FtrMenuSctn_wppr
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
+    flex-wrap: wrap
+    // margin-top: 50px 
+    overflow: hidden 
+    .FtrMenu-Wppr   
+        transition: all 1s
+        transform: translateY(150%)
+        transition-delay: 1000ms
+        ul 
+            width: 100%
+            position: relative                   
+            li
+                color: $white 
+                font-size: 15px
+                line-height: 24px
+                font-weight: 300
+                a 
+                    color: $white
+                    font-weight: 300
+                    width: 100%
+                    display: block
+                    text-transform: uppercase
+                    font-size: 15px
+                    line-height: 24px
+                    &:hover 
+                        color: #cccccc
+                .FtrScllink
+                    display: inline-block
+                    position: relative
+                    ul 
+                        width: auto
+                        li 
+                            width: auto
+                            display: inline-block
+                            margin-left: 5px
+
+                
+.CopyRght-Wppr
+    margin-top: 30px
+    overflow: hidden
+    .title 
+        p 
+            color: $white
+            font-weight: 300
+            font-size: 15px
+            text-transform: uppercase
+            transition: all 1s
+            transform: translateX(-100%)
+            transition-delay: 1000ms
+
+.InnerPgFtr
+    background: $ThemClr
+    .FtrContct_wprr
+        display: none
+    .FtrMenuSctn_wppr
+        margin-top: 0
+
+                
+
+
+.RmvAnmtn,
+.InnerPgFtr
+    .ContactTxt-Wppr .title,
+    .ContcMap iframe,
+    .FtrMenuSctn_wppr .FtrMenu-Wppr,
+    .CopyRght-Wppr .title p
+        transform: translate(0, 0) !important
+
+// End Here
+// QUICK INQUIRY Pop Sass
+
+.EquryFrm_Wpp
+    .leftSid 
+        nav
+            padding: 70px 60px
+    .IqryFrm_wppr
+        overflow: hidden
+        opacity: 0
+        visibility: hidden
+        transition: all 1s
+        transition-delay: 2000ms
+        .title 
+            h2 
+                font-size: 36px
+                line-height: 40px
+                transition: all 1s
+                transform: translateY(-100%)
+            p 
+                font-weight: 300
+                transition: all 1s
+                transform: translateX(-100%)
+
+        .GetFrm-Wppr
+            margin-top: 20px
+            fieldset
+                padding: 0
+                flex: 0 100%
+                max-width: 100%
+                transition: all 1s
+                transform: translateX(-100%)
+                .FrmTxt,
+                .PlcHldrTxt
+                    font-weight: 300 
+                .PlcHldrTxt
+                    left: 0
+
+            .ComnBtn
+                position: relative
+                top: 0
+                right: 0
+                transition: all 1s
+                transform: translateY(100%)
+
+.MenuOpn
+    .IqryFrm_wppr
+        opacity: 1
+        visibility: visible
+
+        .title 
+            h2 
+                transform: translateY(0%)
+            p 
+                transform: translateX(0%)
+        .GetFrm-Wppr
+            fieldset
+                transform: translateX(0%)
+            .ComnBtn
+                transform: translateY(0%)
+
+.RmvMenu
+    .IqryFrm_wppr
+        opacity: 0
+        visibility: visible
+        .title 
+            h2 
+                transform: translateY(-100%)
+            p 
+                transform: translateX(-100%)
+        .GetFrm-Wppr
+            fieldset
+                transform: translateX(100%)
+            .ComnBtn
+                transform: translateY(100%)
+
+
+
+
+
+  

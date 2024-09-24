@@ -1,0 +1,177 @@
+.clnt_hdng,
+.prgs_rng,
+.prgs_bar_bg,
+.clnt_id,
+.clnt_stst_dtl,
+.clnt_stst_itm
+    width: 100%
+    display: block
+    position: relative
+
+.clnt_hdng
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    .title
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: flex-start
+        h5 
+            display: flex
+            font-size: 32px
+            font-weight: 300
+            line-height: normal
+        h1
+            width: 100%
+            color: #a3ee80
+            font-weight: 400
+            font-size: 24px
+        .prgs_wppr
+            width: 30%
+            display: block
+            overflow: hidden
+            margin-left: 20px
+            position: relative
+            border-radius: 16px
+            .prgs_rng,
+            .prgs_bar_bg
+                top: 0
+                left: 0
+                z-index: 0
+                width: 100%                
+                position: absolute
+            .prgs_rng
+                top: 50%
+                width: 0%
+                height: 90%
+                transition: all .5s
+                transform: translateY(-50%)
+                background: linear-gradient(270deg, #60A5FA -46.05%, #1161C3 89.47%)
+                border-top-right-radius: 0 
+                border-bottom-right-radius: 0
+            p 
+                position: relative
+                border-radius: 16px
+                font-size: 14px
+                padding: 0px 20px
+                display: block
+                color: $white
+                z-index: 2
+            .prgs_bar_bg
+                height: 100%
+                background: rgba(217, 217, 217, 0.07)
+    .clnt_id
+        width: auto
+        .title
+            justify-content: center
+            p 
+                width: 100%
+                color: $white
+                display: block
+                font-size: 16px
+                font-weight: 400
+                line-height: normal
+                margin-bottom: 10px
+                text-align: center
+            .trk_hdng                                  
+                h4 
+                    width: 100%
+                    color: #FFF
+                    font-size: 16px
+                    max-width: 200px
+                    font-weight: 400
+                    padding: 10px 20px
+                    text-align: center
+                    position: relative
+                    line-height: normal
+                    display: inline-block
+                    &::before
+                        @include aftrBeforBX(100%,100%,0%,0,0,0%)
+                        background: url("../images/index/recaster_id.svg") center center no-repeat
+                        background-size: contain
+                        z-index: -1
+
+.clnt_stst_dtl
+    .clnt_stst_itm
+        padding: 0 15px
+        display: flex
+        margin-bottom: 15px
+        align-items: flex-start
+        justify-content: flex-start
+        &:last-child
+            .title
+                &::before,
+                &::after                    
+                    display: none
+            
+        .srlno
+            border: 2px solid #fff
+            justify-content: center
+            align-items: center
+            border-radius: 50%
+            font-size: 22px
+            display: flex
+            color: $white
+            height: 50px
+            width: 50px
+            z-index: 2
+            background: linear-gradient(180deg, #484E56 17.71%, #3B4048 90.44%)
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.35)
+        .title
+            margin-left: 20px
+            width: calc( 100% - 70px)
+            &::before,
+            &::after                
+                @include aftrBeforBX(2px,100%,15px,0,0,-3.2%)
+                background: $white
+                transition: all 1s
+            &::after   
+                height: 0
+            h5 
+                color: #FFF
+                font-size: 20px
+                font-weight: 400
+                line-height: normal
+            p 
+                color: rgba(255, 255, 255, 0.65)
+                margin: 10px 0 15px
+                font-weight: 300
+                width: 80%
+            ul 
+                width: 100%
+                display: block
+                position: relative
+                padding-left: 5px
+                li 
+                    display: flex
+                    font-size: 14px
+                    font-weight: 300
+                    line-height: 24px
+                    align-items: center
+                    margin-bottom: 10px
+                    justify-content: flex-start
+                    color: rgba(255, 255, 255, 0.65)
+                    em 
+                        width: 15px
+                        display: flex
+                        margin-right: 15px
+                        align-items: center
+                        justify-content: flex-start
+    .sts_don
+        .srlno
+            border-color: #A3EE80 
+        .title
+            &::after                
+                height:  100%
+                background: #A3EE80
+
+
+
+            
+
+
+
+
+
+

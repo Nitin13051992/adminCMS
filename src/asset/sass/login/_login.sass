@@ -1,0 +1,343 @@
+.lgn_frm,
+.hedr_wppr,
+.logo,
+.lgn_btn_wppr,
+.lgn_bnnr_wppr,
+.bnnr_img,
+.bnnr_img img,
+.lgn_txt_cncnt_wppr,
+.jnry_txt_wppr,
+.lgn_pop_wppr,
+.fldst_wppr,
+.txt_fld_wppr,
+.rmbr_me_wppr,
+.lgn_btn
+    width: 100%
+    position: relative
+    display: block
+
+.lgn_frm
+    height: 100vh 
+    overflow: hidden
+    .hedr_wppr
+        position: fixed
+        width: 100% 
+        z-index: 2
+        left: 0
+        top: 0
+        .hdr-cncnt_wppr
+            display: flex
+            padding: 20px 0
+            align-items: center
+            justify-content: space-between
+            .logo
+                width: 120px
+                a 
+                    line-height:  50px
+                    font-weight: 500
+                    font-size: 45px
+                    display: block
+                    color: $white
+                    width: 100%
+            .lgn_btn_wppr
+                width: auto
+                button
+                    border: 0
+                    color: $white
+                    font-size: 16px
+                    font-weight: 500
+                    line-height: 24px
+                    padding: 6px 20px
+                    border-radius: 5px
+                    padding-right: 40px
+                    background: $ThemClr
+                    letter-spacing: 1.2px
+                    font-family: 'Montserrat', sans-serif
+                    &::before
+                        @include aftrBeforBX(20px,2px,50%,15px,0,auto)
+                        background: $white
+                    &::after
+                        @include aftrBeforBX(10px,10px,50%,10px,0,auto)
+                        transform: rotate(-45deg) translateY(-50%)
+                        border-bottom: 2px solid $white
+                        border-right: 2px solid $white
+                    &:hover
+                        background: #b12229
+    .lgn_bnnr_wppr
+        overflow: hidden
+        height: calc( 100vh - 400px )
+        .bnnr_img
+            height: 100%
+            background: $black
+            &::before
+                @include aftrBeforBX(100%,100%,0,0px,0,0)
+                background: linear-gradient(180deg, rgb(0 0 0 / 31%) 76.04%, #000 100%)
+                z-index: 1
+            &::after                
+                @include aftrBeforBX(100%,100%,auto,0px,-84%,0)
+                background: url("../images/login/crw_bg.svg") center center no-repeat
+                transform: scale(2)
+                background-size: cover 
+                z-index: 1
+            img 
+                height: 100%
+                opacity: .5
+                object-fit: cover
+        .bnnr_txt_wppr
+            transform: translateY(-50%)
+            position: absolute
+            width: 100%
+            z-index: 1
+            top: 50%
+            left: 0
+            .title
+                text-align: center
+                h1 
+                    color: $ThemClr
+                    font-size: 128px
+                    font-weight: 400
+                    line-height: normal
+                    margin-bottom: 10px
+                    text-transform: uppercase
+                    font-family: 'Koulen', sans-serif
+                small
+                    width: 100%
+                    color: $white
+                    display: block
+                    font-size: 40px
+                    font-weight: 500
+                    position: relative
+                    line-height: normal
+                    letter-spacing: 2px
+                    font-family: 'Montserrat', sans-serif
+    .lgn_txt_cncnt_wppr
+        // height: calc( 100vh - 70% )
+        // padding: 80px 0
+        padding: 40px 0
+        .jnry_txt_wppr
+            width: 50%
+            max-width: 1940px
+            margin: 0 auto
+            &::before
+                @include aftrBeforBX(20%,4px,0,0px,0,50%)
+                transform: translateX(-50%)
+                background: $ThemClr
+                z-index: 1
+            .title
+                h2,p
+                    text-align: center
+                h2 
+                    color: #313131
+                    margin: 40px 0 30px
+                    font-family: Montserrat
+                    font-size: 40px
+                    font-weight: 500
+                    line-height: normal
+                    letter-spacing: 2px
+                    text-transform: uppercase
+                p 
+                    color: #313131
+                    font-family: Montserrat
+                    font-weight: 500
+                    letter-spacing: 0.8px
+                    text-transform: lowercase
+.lgn_pop_wppr
+    background: rgb(0 0 0 / 55%)
+    position: fixed
+    display: none
+    width: 100%
+    z-index: 5
+    bottom: 0
+    right: 0
+    left: 0
+    top: 0
+    .lgn_frm_wppr
+        transform: translate(-50%,-50%)
+        border-radius: 10px
+        background: $white
+        position: absolute
+        max-width: 500px
+        padding: 30px
+        width: 30%
+        left: 50%
+        top: 50%
+        .title
+            h5 
+                color: $black
+                font-size: 20px
+                font-weight: 400
+                line-height: 30px
+                em 
+                    color: $ThemClr
+                    font-weight: 700
+            h3
+                color: $black
+                font-size: 55px
+                font-weight: 500
+                line-height: 60px
+                margin: 15px 0 30px
+        .fldst_wppr
+            fieldset
+                margin-bottom: 10px
+                label
+                    width: 100%
+                    color: $black
+                    display: block
+                    font-size: 16px
+                    font-weight: 400
+                    line-height: 24px
+                    margin-bottom: 15px
+                .txt_fld_wppr
+                    display: flex
+                    border-radius: 9px
+                    padding: 10px 15px
+                    align-items: center
+                    border: 1px solid #ADADAD
+                    justify-content: flex-start
+                    em 
+                        width: 16px
+                        display: block
+                        margin-right: 10px
+                        img 
+                            width: 100%
+                            display: block
+                    .lgn_frm_txt
+                        border: 0
+                        width: calc( 100% - 15% )
+                        font-size: 16px
+                        line-height: 24px
+                .error_imput
+                    border-color: red
+                .error_msg
+                    // color: $ThemClr
+                    color: red
+                    font-size: 14px
+                    margin: 10px 0 0
+                    font-weight: 500
+                    line-height: 24px
+            .rmbr_me_wppr
+                margin-bottom: 30px
+                .rmbr_chckbx
+                    display: flex
+                    padding: 0 10px
+                    align-items: center
+                    justify-content: flex-start
+                    .rmbr_chck_txt
+                        top: 4px
+                        left: 10px
+                        opacity: 0
+                        z-index: 1
+                        width: 15px
+                        height: 15px
+                        cursor: pointer
+                        position: absolute
+                        &:hover ~ span,
+                        &:checked ~ span
+                            background: $ThemClr
+                            border-color: $ThemClr
+                        &:checked ~ span::before
+                            display: block
+                    span 
+                        width: 15px
+                        height: 15px
+                        display: block
+                        position: relative
+                        margin-right: 10px
+                        border: 1px solid #666
+                        &::before
+                            @include aftrBeforBX(10px,6px,2px,0px,0,2px)
+                            border-bottom: 2px solid $white
+                            border-left: 2px solid $white
+                            transform: rotate(-45deg)
+                            display: none
+            .lgn_btn
+                border: 0
+                color: $white
+                cursor: pointer
+                font-size: 18px
+                font-weight: 500
+                line-height: 28px
+                text-align: center
+                border-radius: 5px
+                padding: 10px 20px
+                background: $ThemClr
+                &:hover
+                    background: #b12229
+        .lgn_clsBtn
+            background: transparent
+            position: absolute
+            height: 20px
+            width: 20px
+            right: 10px
+            left: auto
+            z-index: 2
+            padding: 0
+            top: 10px
+            border: 0
+            &::before,
+            &::after                
+                @include aftrBeforBX(0,0px,50%,0px,0,50%)
+                transform: translate(-50%,-50%) rotate(45deg)
+                transition: all .5s                
+                background: $black
+            &::before
+                width: 100%
+                height: 2px
+            &::after
+                width: 2px
+                height: 100%
+            &:hover
+                &::before,
+                &::after
+                    background: $ThemClr
+                    transform: translate(-50%,-50%) rotate(-45deg)
+.show_lgn_frm
+    display: block
+
+.logn_ldr
+    justify-content: center
+    border-radius: 10px
+    align-items: center
+    position: absolute
+    display: flex
+    height: 100%
+    width: 100%
+    z-index: 2
+    left: 0
+    top: 0
+    &::before
+        @include aftrBeforBX(100%,100%,0%,0,0,0%)
+        background: #00000069
+.eror_wppr
+    width: 100%
+    padding: 20px
+    // height: 100%
+    background: $white
+
+.eror_img
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    img 
+        width: 30%
+        display: block
+        
+.bct_hm_btn
+    width: 100%
+    display: flex
+    margin: 30px 0
+    align-items: center
+    justify-content: center
+    a 
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.36)
+        background: #DC323A
+        border-radius: 5px
+        text-align: center
+        padding: 8px 30px
+        line-height: 28px
+        display: block
+        color: $white
+        border: 0
+        &:hover
+            background: #b7262d

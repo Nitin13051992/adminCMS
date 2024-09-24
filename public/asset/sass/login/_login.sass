@@ -1,0 +1,225 @@
+.lgn_wppr,
+.mngd_vdo_wppr,
+.glb_vdo_wppr,
+.lgn_hdng_wppr,
+.lgn_frm_wppr,
+.fldst_wppr,
+.rmbr_me_wppr,
+.trm_usr
+    width: 100%
+    position: relative
+    display: block
+
+.container,
+.row,
+.col-8,
+.col-4,
+.mngd_vdo_wppr
+    height: 100%
+
+.mngd_vdo_wppr
+    // border-right: 1px solid rgba(211, 204, 204, 0.26)
+ 
+.lgn_wppr
+    height: 100vh
+    overflow: hidden   
+    .glb_vdo_wppr
+        // height: calc( 100vh - 200px )
+        height: 100%
+        position: relative
+        margin-bottom: 30px
+        &::before,
+        &::after            
+            @include aftrBeforBX(100%,100%,auto,0,0%,0)
+            background: linear-gradient(45deg,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%)
+            z-index: 1     
+        &::after
+               
+        img
+            height: 100%
+        video
+            width: 100%
+            height: 100%
+            object-fit: cover
+    .lgn_frm
+        position: absolute
+        height: 100%
+        width: 100%
+        z-index: 1
+        left: 0
+        top: 0
+            
+    .lgn_hdng_wppr
+        position: absolute
+        padding: 0 30px
+        bottom: 50px
+        z-index: 3
+        left: 0px
+        .title
+            padding: 0 15px
+            h1 
+                color: $white
+                font-size: 55px
+                font-weight: 700
+                line-height: 60px
+                text-transform: capitalize
+                em 
+                    background: linear-gradient(92deg, #A142CF 48.29%, #DE4C53 88.74%)
+                    background-clip: text
+                    -webkit-background-clip: text
+                    -webkit-text-fill-color: transparent
+                    letter-spacing: -0.9px
+            p 
+                color: $white
+                font-size: 40px
+                font-weight: 200
+                line-height: normal
+                letter-spacing: 0.675px
+    .col-4
+        z-index: 1
+        display: flex
+        position: relative
+        align-items: center
+        justify-content: center
+        &::before
+            @include aftrBeforBX(100%,60%,auto,0,-22%,0)
+            background: radial-gradient(ellipse at center, rgb(92 41 173 / 48%) 0%, rgba(125, 154, 177, 0) 75%, rgba(125, 154, 177, 0) 90%, rgba(125, 154, 177, 0) 100%)
+            border-radius: 50%
+        .lgn_frm_wppr
+            width: 80%
+            height: auto
+            padding: 50px
+            text-align: center
+            border-radius: 13px
+            z-index: 1
+            border: 1px solid rgba(217, 217, 217, 0.05)
+            background: rgb(255 255 255 / 8%)
+            backdrop-filter: blur(4px)
+            -webkit-backdrop-filter: blur(4px)
+            border-radius: 10px
+            border: 1px solid rgba(255, 255, 255, 0.18)
+            .title
+                margin-bottom: 20px
+                h1 
+                    color: $white
+                    font-size: 40px
+                    text-align: left
+                    font-weight: 600
+                    line-height: 111.5%
+            .fldst_wppr
+                fieldset
+                    margin-bottom: 20px
+                    position: relative
+                    label
+                        width: 100%
+                        display: block
+                        font-size: 16px
+                        text-align: left
+                        font-weight: 400
+                        color: #A4A4A4
+                        font-style: normal
+                        line-height: normal
+                        margin-bottom: 6px
+                    em 
+                        position: absolute
+                        width: 17px
+                        bottom: 20px
+                        left: 20px
+                        z-index: 1
+                        display: block
+                        img 
+                            width: 100%
+                            display: block
+                    .lgn_frm_txt
+                        width: 100%
+                        border-radius: 8px
+                        padding: 15px 20px 15px 50px
+                        border: 0.1px solid #444
+                        color: $white
+                        // background: linear-gradient(11deg, #282a2f -3%, #28262d 100%)
+                        background: transparent
+                .rmbr_me_wppr
+                    display: flex
+                    align-items: center
+                    padding: 0 5px
+                    margin: 0px 0 20px
+                    justify-content: flex-start
+                    .rmbr_chckbx
+                        width: 15px
+                        height: 15px
+                        display: block
+                        position: relative
+                        margin-right: 15px
+                        .rmbr_chck_txt
+                            position: absolute
+                            cursor: pointer
+                            width: 100%
+                            height: 100%
+                            opacity: 0
+                            z-index: 1
+                            top: 0
+                            &:hover ~ span,
+                            &:checked ~ span 
+                                background: #000
+                                border-color: #000 
+                            &:checked ~ span::before
+                                display: block                                                                                           
+                        span
+                            display: block
+                            height: 100%
+                            width: 100%
+                            border: 1px solid #444
+                            &::before
+                                @include aftrBeforBX(8px,4px,4px,0,0,4px)
+                                border-bottom: 1px solid #fff 
+                                border-left: 1px solid #fff 
+                                transform: rotate(-45deg)
+                                display: none
+                    p 
+                        color: #A4A4A4
+                .lgn_btn
+                    width: 100%
+                    color: $white
+                    font-size: 22px
+                    padding: 10px 0
+                    font-weight: 400
+                    border-radius: 8px
+                    background: transparent
+                    border: 1px solid #A4A4A4
+                    &:hover
+                        background: linear-gradient(90deg, #9C3FE4 0.16%, #C65647 101.62%)
+                        border-color: transparent 
+            .frgt_otp_wppr
+                fieldset
+                    justify-content: space-between
+                    .lgn_frm_txt
+                        width: 22%     
+            .trm_usr
+                margin: 30px 0
+                p
+                    color: #A4A4A4
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 400
+                    text-align: left
+                    line-height: normal
+                    a 
+                        background: linear-gradient(95deg, #A041D3 9.59%, #C35451 40.39%)
+                        background-clip: text
+                        -webkit-background-clip: text
+                        -webkit-text-fill-color: transparent
+                        &:hover
+                            background: $white
+                            background-clip: text
+            .frgt_btn
+                border: 0
+                background: transparent
+                color: rgba(255, 255, 255, 0.62)
+                font-size: 16px
+                font-weight: 400
+                line-height: normal
+                &:hover
+                    color: $white
+
+
+

@@ -1,0 +1,293 @@
+[{
+    "AllHeading" :[
+        {
+            "id": 1,
+            "hdngName": "Recaster Status"
+        }
+    ],
+    "PublisherTableData":[
+        {
+            "id": "1",
+            "userId": "2305",
+            "titlename": "Gloria",
+            "Email": "Loremipsum@gmail.com",
+            "status": "Active",
+            "MobileName": "9876543210",
+            "Provider": "03/6/2023 .12:10",
+            "RegisterDate": "Application"
+        },
+        {
+            "id": "2",
+            "userId": "2305",
+            "titlename": "Julia",
+            "Email": "Loremipsum@gmail.com",
+            "status": "Active",
+            "MobileName": "9876543210",
+            "Provider": "03/6/2023 .12:10",
+            "RegisterDate": "Application"
+        },
+        {
+            "id": "3",
+            "userId": "2305",
+            "titlename": "Brynne",
+            "Email": "Loremipsum@gmail.com",
+            "status": "Pending",
+            "MobileName": "9876543210",
+            "Provider": "03/6/2023 .12:10",
+            "RegisterDate": "Application"
+        },
+        {
+            "id": "4",
+            "userId": "2305",
+            "titlename": "Sade",
+            "Email": "Loremipsum@gmail.com",
+            "status": "Active",
+            "MobileName": "9876543210",
+            "Provider": "03/6/2023 .12:10",
+            "RegisterDate": "Application"
+        },
+        {
+            "id": "5",
+            "userId": "2305",
+            "titlename": "Phelan",
+            "Email": "Loremipsum@gmail.com",
+            "status": "Active",
+            "MobileName": "9876543210",
+            "Provider": "03/6/2023 .12:10",
+            "RegisterDate": "Application"
+        },
+        {
+            "id": "6",
+            "userId": "2305",
+            "titlename": "Evelyn",
+            "Email": "Loremipsum@gmail.com",
+            "status": "Active",
+            "MobileName": "9876543210",
+            "Provider": "03/6/2023 .12:10",
+            "RegisterDate": "Application"
+        },
+        {
+            "id": "7",
+            "userId": "2305",
+            "titlename": "Demetrius",
+            "Email": "Loremipsum@gmail.com",
+            "status": "Pending",
+            "MobileName": "9876543210",
+            "Provider": "03/6/2023 .12:10",
+            "RegisterDate": "Application"
+        },
+        {
+            "id": "8",
+            "userId": "2305",
+            "titlename": "Jasper",
+            "Email": "Loremipsum@gmail.com",
+            "status": "Active",
+            "MobileName": "9876543210",
+            "Provider": "03/6/2023 .12:10",
+            "RegisterDate": "Application"
+        },
+        {
+            "id": "9",
+            "userId": "2305",
+            "titlename": "Victor",
+            "Email": "Loremipsum@gmail.com",
+            "status": "Active",
+            "MobileName": "9876543210",
+            "Provider": "03/6/2023 .12:10",
+            "RegisterDate": "Application"
+        },
+        {
+            "id": "10",
+            "userId": "2305",
+            "titlename": "Rina",
+            "Email": "Loremipsum@gmail.com",
+            "status": "Pending",
+            "MobileName": "9876543210",
+            "Provider": "03/6/2023 .12:10",
+            "RegisterDate": "Application"
+        },
+        {
+            "id": "11",
+            "userId": "2305",
+            "titlename": "Bonner",
+            "Email": "Loremipsum@gmail.com",
+            "status": "Active",
+            "MobileName": "9876543210",
+            "Provider": "03/6/2023 .12:10",
+            "RegisterDate": "Application"
+        },
+        {
+            "id": "12",
+            "userId": "2305",
+            "titlename": "Randolph",
+            "Email": "Loremipsum@gmail.com",
+            "status": "Active",
+            "MobileName": "9876543210",
+            "Provider": "03/6/2023 .12:10",
+            "RegisterDate": "Application"
+        },
+        {
+            "id": "13",
+            "userId": "2305",
+            "titlename": "Maldonado",
+            "Email": "Loremipsum@gmail.com",
+            "status": "Pending",
+            "MobileName": "9876543210",
+            "Provider": "03/6/2023 .12:10",
+            "RegisterDate": "Application"
+        },
+        {
+            "id": "14",
+            "userId": "2305",
+            "titlename": "Herring",
+            "Email": "Loremipsum@gmail.com",
+            "status": "Active",
+            "MobileName": "9876543210",
+            "Provider": "03/6/2023 .12:10",
+            "RegisterDate": "Application"
+        },
+        {
+            "id": "15",
+            "userId": "2305",
+            "titlename": "Bonner",
+            "Email": "Loremipsum@gmail.com",
+            "status": "Active",
+            "MobileName": "9876543210",
+            "Provider": "03/6/2023 .12:10",
+            "RegisterDate": "Application"
+        },
+        {
+            "id": "16",
+            "userId": "2305",
+            "titlename": "Dorsey",
+            "Email": "Loremipsum@gmail.com",
+            "status": "Active",
+            "MobileName": "9876543210",
+            "Provider": "03/6/2023 .12:10",
+            "RegisterDate": "Application"
+        },
+        {
+            "id": "16",
+            "userId": "2305",
+            "titlename": "Bates",
+            "Email": "Loremipsum@gmail.com",
+            "status": "Pending",
+            "MobileName": "9876543210",
+            "Provider": "03/6/2023 .12:10",
+            "RegisterDate": "Application"
+        }
+    ],
+    "ClintTable" :[
+        {
+            "id": "1",
+            "clientName": "Disney Star",
+            "assignee": "Lorem Ipsum",
+            "recasterNo": "3",
+            "date": "01/10/2023",
+            "status": "Completed",
+            "status_cls":"",
+            "rqstTitle": "Recaster_071"
+        },
+        {
+            "id": "2",
+            "clientName": "Netflix",
+            "assignee": "Lorem Ipsum",
+            "recasterNo": "2",
+            "date": "02/10/2023",
+            "status": "Pending",
+            "status_cls":"pndg",
+            "rqstTitle": "Recaster_072"
+        },
+        {
+            "id": "3",
+            "clientName": "Disney+ Hotstar",
+            "assignee": "Lorem Ipsum",
+            "recasterNo": "5",
+            "date": "03/10/2023",
+            "status": "Completed",
+            "status_cls":"",
+            "rqstTitle": "Recaster_073"
+        },
+        {
+            "id": "4",
+            "clientName": "Amazon Prime",
+            "assignee": "Lorem Ipsum",
+            "recasterNo": "43",
+            "date": "04/10/2023",
+            "status": "Pending",
+            "status_cls":"pndg",
+            "rqstTitle": "Recaster_074"
+        },
+        {
+            "id": "5",
+            "clientName": "Eros Now",
+            "assignee": "Lorem Ipsum",
+            "recasterNo": "58",
+            "date": "05/10/2023",
+            "status": "Completed",
+            "status_cls":"",
+            "rqstTitle": "Recaster_075"
+        },
+        {
+            "id": "6",
+            "clientName": "Hoichoi",
+            "assignee": "Lorem Ipsum",
+            "recasterNo": "68",
+            "date": "06/10/2023",
+            "status": "Pending",
+            "status_cls":"pndg",
+            "rqstTitle": "Recaster_076"
+        },
+        {
+            "id": "7",
+            "clientName": "Jio Cinema",
+            "assignee": "Lorem Ipsum",
+            "recasterNo": "72",
+            "date": "07/10/2023",
+            "status": "Completed",
+            "status_cls":"",
+            "rqstTitle": "Recaster_077"
+        },
+        {
+            "id": "8",
+            "clientName": "Ullu",
+            "assignee": "Lorem Ipsum",
+            "recasterNo": "72",
+            "date": "08/10/2023",
+            "status": "Active",
+            "status_cls":"actv",
+            "rqstTitle": "Recaster_078"
+        },
+        {
+            "id": "9",
+            "clientName": "Zee5",
+            "assignee": "Lorem Ipsum",
+            "recasterNo": "72",
+            "date": "09/10/2023",
+            "status": "Active",
+            "status_cls":"actv",
+            "rqstTitle": "Recaster_079"
+        },
+        {
+            "id": "10",
+            "clientName": "Voot",
+            "assignee": "Lorem Ipsum",
+            "recasterNo": "72",
+            "date": "10/10/2023",
+            "status": "Active",
+            "status_cls":"actv",
+            "rqstTitle": "Recaster_080"
+        },
+        {
+            "id": "11",
+            "clientName": "MX Player",
+            "assignee": "Lorem Ipsum",
+            "recasterNo": "72",
+            "date": "11/10/2023",
+            "status": "Active",
+            "status_cls":"actv",
+            "rqstTitle": "Recaster_081"
+        }        
+    ]
+}]
+

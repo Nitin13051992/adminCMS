@@ -1,0 +1,112 @@
+// media breakpiont
+
+$break-small : 420px
+$break-large : 1024px
+$screen-420 : 420px
+$screen-675 : 675px
+$screen-767 : 767px
+$screen-860 : 860px
+$screen-991 : 991px
+$screen-1024 : 1024px
+$screen-1140 : 1140px
+$screen-1240 : 1240px
+$screen-1300 : 1300px
+$screen-1600 : 1600px
+
+@mixin respond-to($media)
+    @if $media == screen-420
+        @media only screen and (max-width: $screen-420) 
+            @content
+    @else if $media == screen-675
+        @media (max-width: $screen-675)
+            @content
+
+    @else if $media == screen-767
+        @media (max-width: $screen-767)
+            @content
+
+    @else if $media == phnLandscape
+        @media only screen  and (max-width: $screen-767) and  (orientation : landscape)
+            @content
+    @else if $media == screen-860
+        @media (max-width: $screen-860)
+            @content
+
+    @else if $media == screen-991
+        @media (max-width: $screen-991)
+            @content
+
+    @else if $media == screen-1024
+        @media (max-width: $screen-1024)
+            @content
+    @else if $media == screen-1140
+        @media (max-width: $screen-1140)
+            @content
+
+    @else if $media == screen-1240
+        @media (max-width: $screen-1240)
+            @content
+
+    @else if $media == screen-1300
+        @media (max-width: $screen-1300)
+            @content
+    @else if $media == screen-1600
+        @media (max-width: $screen-1600)
+            @content
+    
+    
+//color  
+$black : #000000
+$white : #ffffff 
+$ThemClr : #DC323A
+$lgtGry : #e6e6e6
+$logoclr: #d83351
+
+//font
+// $font : 'MaisonNeue-Mono'
+// $font-mdim : 'MaisonNeue-ExtendedMedium'
+// $font-demibold : 'MaisonNeue-ExtendedDemiBold'
+  
+
+
+@mixin aftrBeforBX($width,$height,$top,$right,$bottom,$left)
+    width: $width
+    height: $height 
+    top: $top
+    right: $right
+    bottom: $bottom
+    left: $left
+    position: absolute
+    content: ""
+ 
+@mixin keyframes($animation-name)
+    @-webkit-keyframes #{$animation-name}
+        @content
+    @-moz-keyframes #{$animation-name}
+        @content
+    @-ms-keyframes #{$animation-name}
+        @content
+    @keyframes #{$animation-name}
+        @content
+
+//alert or error input
+@mixin alert
+    .alert
+        animation: vibrate .4s cubic-bezier(0,0,.3,1) 1
+        background: #fff7f8
+        border: 1px solid #f9b6b6
+    +keyframes(vibrate)
+        10%,30%,50%,70%,90% 
+            transform: translate3d(-3px,0,0)
+            
+        20%,40%,60%,80%
+            transform: translate3d(3px,0,0)
+
+
+
+        
+
+
+
+
+

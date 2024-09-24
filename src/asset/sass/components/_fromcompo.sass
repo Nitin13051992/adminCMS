@@ -1,0 +1,158 @@
+.frm_pop_wppr,
+.frm_bx_wppr,
+.frm_wppr,
+.sbmt_wppr
+    width: 100%
+    display: block
+    position: relative
+
+.frm_pop_wppr
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 9
+    position: fixed
+    background: rgb(0 0 0 / 24%)   
+    .frm_pop
+        box-shadow: 0 5px 10px #00000063
+        transform: translate(-50%,-50%)
+        border-radius: 5px 
+        position: absolute
+        background: $white
+        padding: 30px 15px
+        // max-width: 1366px
+        // width: 60%
+        left: 50%
+        top: 50%
+        @include respond-to(screen-1600)
+            width: 90%
+        .pop_cld
+            position: absolute
+            z-index: 1
+            width: 30px
+            height: 30px
+            border: 0
+            background: $ThemClr
+            right: 0
+            top: 0
+            &::before,
+            &::after
+                @include aftrBeforBX(0,0,50%,0,0,50%)
+                transform: translate(-50%,-50%) rotate(45deg)
+                background: $white
+            &::before
+                width: 60%
+                height: 2px
+            &::after
+                height: 60%
+                width: 2px
+            &:hover
+                background: #d45258
+    .frm_bx_wppr
+        .title
+            padding: 0 15px
+            h2
+                font-size: 24px          
+                line-height: 30px
+        .frm_wppr
+            display: flex
+            flex-wrap: wrap
+            align-items: flex-start
+            justify-content: flex-start
+            fieldset
+                width: 50%
+                padding: 0 15px
+                margin-top: 30px
+                margin-bottom: 0px
+                label
+                    width: 100%
+                    display: block
+                    position: relative
+                    margin-bottom: 10px
+                    color: rgb(0 0 0 / 51%)
+                    font-size: 16px
+                    line-height: 30px
+                    font-weight: 500
+                    em 
+                        color: red
+                        display: inline
+                .frm_txt,
+                .dropdown-container
+                    border: 0
+                    width: 100%
+                    display: block
+                    font-size: 16px
+                    line-height: 28px
+                    padding: 10px 15px
+                    border-radius: 5px
+                    position: relative
+                    background: #F2F2F2
+                .dsbl_fld
+                    opacity: .6
+                    cursor: no-drop
+                    background: #ffe7e7
+                .emlInpt
+                    &:disabled
+                        opacity: .4
+                        cursor: no-drop
+                .dropdown-container
+                    padding: 6px 15px
+                    &:focus-within
+                        box-shadow: none
+                    .gray
+                        color: $black
+                    .dropdown-heading
+                        padding: 0                    
+                .rmsc
+                    .dropdown-content
+                        position: absolute !important
+                        padding: 0 !important
+                        left: 0 !important
+                    .select-item 
+                        padding: 5px 20px !important
+                        margin-bottom: 0
+                p 
+                    color: red 
+                    padding: 0 10px
+                    font-size: 14px
+                    margin: 10px 0 0
+                    line-height: 20px
+                select
+                    height: 47.98px
+            .rgltn_txtx
+                border: 2px solid #F2F2F2
+                background: #F2F2F2
+                border-radius: 5px
+                display: block
+                height: 100px
+                padding: 10px
+                width: 100%
+                small
+                    display: inline-block
+                    border-radius: 5px
+                    background: $white
+                    padding: 4px 10px
+                    line-height: 20px
+                    font-size: 14px
+                    margin: 0 3px
+            .sbmt_wppr
+                justify-content: flex-end
+                margin-top: 40px
+                padding: 0 15px                
+                display: flex
+                button
+                    box-shadow: 0 3px 6px rgb(0 0 0 / 36%)
+                    background: $ThemClr
+                    border-radius: 5px
+                    line-height: 28px
+                    width: 30%
+                    color: $white
+                    padding: 10px
+                    border: 0
+                    &:hover
+                        background: #b7262d
+
+
+
+

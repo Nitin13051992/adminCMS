@@ -1,0 +1,783 @@
+.hdr_hdng-wppr,
+.srch_prfl_wppr,
+.dshbrd_wppr,
+.dshbrd_dtal_wppr,
+.mtr_wppr,
+.crt_wppr,
+.crt_hdng,
+.mtr_spd_wppr,
+.mtr_img,
+.crt_rng_txt_wppr,
+.chnl_wppr,
+.chnl_port,
+.chnl_sldr_wppr,
+.chnl_sldr_itm,
+.chnl_dtl_list,
+.grph_alrm_wppr,
+.alrm_wppr,
+.grph_map,
+.prgs-bx,
+.anmt_hdng
+    width: 100%
+    display: block
+    position: relative
+.dshbrd_wppr
+    height: 100%
+    overflow: auto
+.hdr_hdng-wppr
+    padding: 20px
+    margin-bottom: 30px
+    border-bottom: 1px solid #3F4347 
+    .title 
+        width: auto
+        h5,h1
+            color: #FFF
+            font-size: 26px
+            font-weight: 400
+            line-height: normal
+        h1
+            margin-top: 5px
+            color: #62D9FF
+            font-size: 30px
+    .srch_prfl_wppr
+        width: auto
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        .srch_wppr
+            display: flex
+            padding: 12px 20px
+            margin-right: 30px
+            border-radius: 8px
+            position: relative
+            align-items: center
+            justify-content: flex-start
+            &::before
+                @include aftrBeforBX(100%,100%,0,0,0,0)
+                z-index: -1
+                background: url("../images/index/search_bar.svg") center center no-repeat
+                background-size: cover 
+            button
+                border: 0
+                padding: 0
+                margin-right: 8px
+                background: transparent
+                img 
+                    width: 20px
+                    display: block
+            .srch_txt_bx
+                background: transparent
+                line-height: 24px
+                font-size: 16px
+                color: $white
+                border: 0
+        .prfl_wppr
+            display: flex
+            align-items: center
+            justify-content: flex-start
+            .bel_icn
+                position: relative
+                margin-right: 30px
+                cursor: pointer
+                span 
+                    top: 1px
+                    right: 3px
+                    width: 6px
+                    z-index: 1
+                    height: 6px
+                    background: red 
+                    border-radius: 50%
+                    position: absolute
+                img 
+                    display: block
+            .prf_bx
+                display: flex
+                align-items: center
+                justify-content: flex-start
+                .usr_icn
+                    width: 50px 
+                    height: 50px
+                    display: block
+                    margin-right: 10px
+                    border-radius: 50%
+                    img 
+                        width: 100%
+                        height: 100%
+                        border-radius: 50%
+                .usr_dtl
+                    display: block
+                    position: relative
+                    h6,p 
+                        color: $white
+                        font-weight: 300
+                    h6 
+                        font-size: 14px
+                        line-height: 18px
+                    p 
+                        font-size: 12px
+                        margin-top: 5px
+                        color: #a9a9a9
+.dshbrd_dtal_wppr
+    .mtr_wppr
+        display: flex
+        margin-bottom: 30px
+        align-items: flex-start
+        justify-content: flex-start
+        .clm_4
+            width: 25%
+            padding: 0 15px
+            .crt_wppr
+                border-radius: 15px
+                background: #272B30
+                box-shadow: 5px 9px 7px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+                .crt_hdng
+                    padding: 20px 30px
+                    display: flex
+                    flex-wrap: wrap
+                    align-items: center
+                    justify-content: flex-start
+                    border-bottom: 1px solid #414448
+                    .crt_icn
+                        padding: 8px
+                        display: flex
+                        border-radius: 5px
+                        align-items: center
+                        margin-right: 30px
+                        justify-content: center
+                        background: #B1E5FC
+                        img 
+                            width: 30px
+                            height: 30px
+                            display: block
+                    .title
+                        width: auto
+                        small
+                            display: block
+                            color: #FFF
+                            font-size: 20px
+                            font-weight: 400
+                            line-height: normal
+                    .mtr_spd_wppr
+                        display: flex
+                        overflow: hidden
+                        margin-top: 30px
+                        align-items: flex-end
+                        justify-content: space-between
+                        p 
+                            color: $white
+                            font-size: 20px
+                            font-weight: 400
+                            line-height: 24px
+                        .mtr_img
+                            padding: 0 20px
+                            position: relative
+                            position: relative
+                            img 
+                                display: block
+                                height: 105px
+                                width: 100%
+                            .mtr_sui
+                                position: absolute
+                                bottom: 0px
+                                left: 50%
+                                width: 0
+                                height: 0
+                                &::after
+                                    content: ""
+                                    display: block
+                                    width: 40px
+                                    height: 20px
+                                    -moz-border-radius: 40px 40px 0 0
+                                    -webkit-border-radius: 40px
+                                    border-radius: 40px 40px 0 0
+                                    background: $white
+                                    position: absolute
+                                    bottom: -10px
+                                    left: -20px
+                                .mtr_rng_sui    
+                                    display: block
+                                    position: absolute
+                                    left: 0px
+                                    bottom: 0px
+                                    width: 90px
+                                    height: 5px
+                                    background: $white
+                                    transform: rotate(-180deg)
+                                    transform-origin: 0% 3px
+                .crt_rng_txt_wppr
+                    display: flex
+                    padding: 20px 30px
+                    align-items: flex-start
+                    justify-content: space-between
+                    .title
+                        width: auto
+                        p, h3 
+                            color: $white
+                            font-size: 20px
+                            font-weight: 400
+                            line-height: 28px
+                            transition: "transform 20s"
+                        p 
+                            font-size: 16px
+                            color: #60A5FA
+                            margin-bottom: 5px
+        .ram_crt
+            .crt_wppr
+                .crt_hdng
+                    .crt_icn
+                        background: #FBCFE8
+        .disk_crt
+            .crt_wppr
+                .crt_hdng
+                    .crt_icn
+                        background: #FFBC99
+        .temp_crt
+            .crt_wppr
+                .crt_hdng
+                    .crt_icn
+                        background: #B5E4CA
+    .prt_cncnt_wppr,
+    .alrm_bel
+        width: 100%
+        display: flex
+        padding: 0 15px
+        justify-content: space-between
+    .chnl_wppr
+        width: calc( 100% - 58% )
+        height: 100%
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        .chnl-clm-3
+            height: 100%
+            width: 32%
+            .chnl-bx
+                padding: 15px
+                height: 230px
+                border-radius: 7px
+                background: #2D3136
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+                .title
+                    text-align: center
+                    small 
+                        width: 100%
+                        color: $white
+                        display: block
+                        font-size: 18px
+                        font-weight: 400
+                        line-height: 24px
+                        position: relative
+                        text-transform: capitalize
+                    h3 
+                        display: block
+                        font-size: 90px
+                        margin:  22px 0
+                        color: #C7D8FD
+                        font-weight: 500
+                        line-height: 96px
+                    .lmn_clr
+                        color: #FBDC8D
+                    .drp_arw
+                        width: 15px
+                        height: 15px
+                        margin: 0 auto
+                        display: block
+                        cursor: pointer
+                        position: relative
+                        &::before
+                            @include aftrBeforBX(80%,80%,0px,0px,0,0)
+                            border-bottom: 1.5px solid $white 
+                            border-right: 1.5px solid $white 
+                            transition: (ease 1s)
+                            transform: rotate(45deg)
+                            animation: mymove .8s linear infinite
+                            @keyframes mymove 
+                                0%
+                                    top: 0
+                                50%
+                                    top: 4px
+                                100%
+                                    top: 0     
+                    .chnl_lst_drp
+                        &::before
+                            transform: rotate(-135deg)
+    .prt_wppr
+        width: calc( 100% - 64% )
+        .prt_dtl
+            padding: 15px 
+            display: flex
+            flex-wrap: wrap
+            border-radius: 7px
+            background: #2D3136
+            align-items: flex-start
+            justify-content: space-between
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+            .title
+                small
+                    margin-bottom: 10px
+                    text-transform: capitalize
+                    line-height: 28px
+                    font-weight: 400
+                    font-size: 20px
+                    display: block
+                    color: $white
+                    width: 100%
+            .chnl_port
+                padding: 10px
+                display: flex
+                position: relative
+                align-items: flex-start
+                justify-content: space-between
+                .prt-3
+                    padding: 10px 0px
+                    display: flex
+                    flex-wrap: wrap
+                    position: relative
+                    align-items: flex-start
+                    justify-content: center                    
+                    span 
+                        border: 2px solid #DB4D4D
+                        border-radius: 10px
+                        position: relative
+                        display: block
+                        padding: 12px
+                        &::before
+                            @include aftrBeforBX(18px,18px,-10px,-8px,0,auto)   
+                            background: url('../images/dashboard/right_tik.svg') center center no-repeat
+                            background-size: cover                          
+                            border-radius: 50%
+                            display: none
+                        img 
+                            display: block
+                            opacity: 0.2
+                            width: 40px
+                    p 
+                        line-height: 18px
+                        color: #B5E4CA
+                        font-size: 14px
+                        font-weight: 300
+                        margin: 10px 0 0
+                        text-align: center
+                        em 
+                            color: $white
+                            display: block
+                            font-size: 11px
+                            margin-top: 5px
+                            padding: 2px 15px
+                            line-height: 20px
+                            border-radius: 50px
+                            background: #272b30
+                .actv_cnctd
+                    span
+                        border-color: #A3EE80
+                        &::before
+                            display: block
+                        img 
+                            opacity: 1
+                .owl-nav
+                    position: absolute
+                    width: auto
+                    top: -30px
+                    display: flex
+                    right: 0
+                    button
+                        background: transparent
+                        border: 1px solid #666
+                        height: 25px
+                        width: 25px
+                        padding: 0
+                        font-size: 35px
+                        line-height: 25px
+                        color: #666
+                        display: flex
+                        border-radius: 5px
+                        margin: 0 6px     
+                        z-index: 1       
+                        align-items: center
+                        justify-content: center
+                        &:hover                            
+                            border-color: #d4d4d4   
+                            color: #d4d4d4 
+                            img 
+                                opacity: 1
+                        img 
+                            width: 16px
+                            opacity: .5                    
+    .time_hr_wppr
+        width: auto
+        padding: 20px
+        display: flex
+        border-radius: 7px
+        background: #2D3136
+        justify-content: center
+        align-items: flex-start
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+        .title
+            height: 100%
+            display: flex
+            flex-wrap: wrap
+            text-align: center
+            p 
+                width: 100%
+                color: $white
+                font-size: 20px
+                font-weight: 400
+                line-height: 28px
+                text-align: center
+            h3 
+                text-align: center
+                line-height: 58px
+                font-weight: 400
+                color: #FF9559
+                font-size: 48px
+                width: 100%
+            small 
+                width: 100%
+                color: #FFF
+                display: block
+                font-size: 36px
+                font-weight: 400
+                line-height: 40px
+                text-align: center
+    .chnl_sldr_wppr
+        padding: 30px
+        display: none
+        .chnl_sldr_itm
+            perspective: 1000px
+            &:hover
+                .flip-card-inner
+                    transform: rotateY(180deg)
+            .chnl_title
+                display: flex
+                margin-bottom: 20px
+                align-items: flex-start
+                justify-content: flex-start
+                .chnl_icn
+                    width: 50px
+                    height: 50px
+                    display: flex
+                    border-radius: 50%
+                    margin-right: 20px
+                    align-items: center
+                    justify-content: center
+                    background: linear-gradient(180deg, rgb(147 202 230) 0%, rgb(100 176 214) 44%, rgb(29, 78, 216) 100%)
+                    img 
+                        width: 30px
+                .chnl_hdng
+                    width: auto
+                    .title
+                        small
+                            display: block
+                            font-size: 14px
+                            font-weight: 400
+                            position: relative
+                            color: rgba(229, 229, 229, 0.80)                        
+                        .chnl_hdng_txt
+                            display: flex
+                            align-items: center
+                            justify-content: flex-start
+                            span 
+                                width: 140px
+                                display: flex
+                                overflow: hidden
+                                margin-right: 15px
+                                align-items: center
+                                justify-content: flex-start
+                            h3 
+                                color: #FFF
+                                font-size: 24px
+                                font-weight: 400        
+                                white-space: nowrap                        
+                            em 
+                                text-transform: uppercase
+                                background: #16151863
+                                display: inline-block
+                                border-radius: 50px
+                                line-height: 18px
+                                padding: 2px 15px
+                                font-size: 10px
+                                color: $white
+                        .anmt_hdng
+                            h3 
+                                animation: rotate-animation 15s infinite linear
+                                @keyframes rotate-animation 
+                                    from 
+                                        transform: translateX(25%)
+                                    to
+                                        transform: translateX(-100%)
+
+            .chnl_dtl_list
+                ul 
+                    width: 100%
+                    display: block
+                    position: relative
+                    li 
+                        width: 100%
+                        padding: 10px 20px
+                        border-radius: 14px
+                        margin-bottom: 10px
+                        background: #212529
+                        position: relative
+                        &:last-child
+                            margin-bottom: 0
+                        &::before
+                            @include aftrBeforBX(5px,5px,auto,20px,15px,auto)
+                            background: #A3EE80
+                            border-radius: 50%
+                        small 
+                            color: #858586
+                            font-weight: 400
+                            font-size: 14px
+                            display: block
+                        p 
+                            color: #FFF
+                            font-size: 16px
+                            font-weight: 400
+            .flip-card-inner
+                position: relative
+                width: 100%
+                height: 100%
+                transition: transform 0.6s
+                transform-style: preserve-3d
+                padding: 20px
+                border-radius: 15px
+                background: #2D3136
+                border-bottom: 4px solid #3061DC
+                .flip-card-front
+                    backface-visibility: hidden
+                .flip-card-back
+                    backface-visibility: hidden
+                    transform: rotateY(180deg)
+                    position: absolute
+                    width: 88%
+                    top: 30px
+                    margin: 0 auto
+                    .chnl_dtl_list
+                        ul 
+                            li 
+                                margin-bottom: 5px
+        .pnk_clr
+            .flip-card-inner
+                border-color: #EE68CD
+                .chnl_title
+                    .chnl_icn
+                        background: linear-gradient(180deg, rgb(255, 197, 243) 0%, rgb(241 150 235) 44%, rgb(233, 72, 192) 100%)
+        .orgn_clr
+            .flip-card-inner
+                border-color: #EA580C
+                .chnl_title
+                    .chnl_icn
+                        background: linear-gradient(180deg,  rgba(254,215,170,1) 0%,rgba(237,195,158,1) 44%,rgba(234,88,12,1) 100%)
+        .grn_clr
+            .flip-card-inner
+                border-color: #A3EE80
+                .chnl_title
+                    .chnl_icn
+                        background: linear-gradient(180deg, #74dcac 0%, #3daf7a 44%, rgb(42, 118, 6) 100%)
+        .owl-nav
+            justify-content: space-between
+            transform: translateY(-50%)
+            align-items: center
+            position: absolute
+            display: flex
+            width: 100%
+            z-index: -1
+            top: 50%
+            left: 0
+            &:hover
+                button
+                    opacity: 1
+            button
+                background: transparent
+                border: 0
+                opacity: 0.5
+            .owl-next
+                right: 0
+            .disabled
+                cursor: no-drop
+                opacity: 0.05
+                z-index: -1
+    .grph_alrm_wppr
+        display: flex
+        margin-top: 30px
+        margin-bottom: 30px
+        align-items: flex-start
+        justify-content: space-between
+        .col-6
+            height: 100%
+            .alrm_wppr,
+            .grph_wppr
+                height: 100%
+                border-radius: 7px
+                padding: 20px 30px 0
+                background: #2D3136
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+                .title
+                    margin-bottom: 20px
+                    h5 
+                        color: $white
+                        font-size: 22px
+                        font-weight: 400
+                        line-height: 150%
+                        text-transform: capitalize
+            .grph_wppr
+                .title
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    .dpr_dwn_bx
+                        display: flex
+                        align-items: flex-start
+                        justify-content: flex-start
+                        .slct
+                            border: 1px solid #4F5053
+                            background: #272B30
+                            border-radius: 8px
+                            font-size: 14px
+                            display: block
+                            padding: 10px
+                            width: 100%
+                            color: #ddd
+                            border: 0
+                            option
+                                margin: 10px 0
+                                font-size: 12px
+                                border-radius: 0 
+                                background: #2D3136
+                                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+                .grph_map
+                    width: 100%
+                    // height: 100%
+                    canvas
+                        // width: 100%
+                        display: block
+            .alrm_wppr
+                .alrm_bel_wppr
+                    display: flex
+                    align-items: center
+                    justify-content: flex-start
+                    .clm-4
+                        z-index: 1
+                        width: 250px
+                        height: 250px
+                        display: flex
+                        position: relative
+                        border-radius: 50%
+                        align-items: center
+                        justify-content: center
+                        background: linear-gradient(to bottom, rgb(205 195 195 / 70%) 0%, rgb(205 195 195 / 70%) 40%, rgb(66 107 182) 100%)
+                        &::before
+                            @include aftrBeforBX(100%,100%,0,0,0,0)
+                            background: linear-gradient(to bottom, rgb(255 255 255 / 77%) 0%, rgba(255, 255, 255, 0.64) 40%, rgb(3 61 165) 100%)
+                            transform: scale(.8)
+                            border-radius: 50%
+                            opacity: .5
+                            z-index: -1
+                        .alrm_bel
+                            display: flex
+                            flex-wrap: wrap
+                            align-items: center
+                            justify-content: space-evenly
+                            .bel_icn
+                                display: block
+                                margin-bottom: 10px
+                                img 
+                                    display: block
+                            .title
+                                p,h5 
+                                    text-align: center
+                                h5 
+                                    font-size: 42px
+                                    font-weight: 500
+                                    line-height: 48px
+                                    color: #434040
+                    .clm-8
+                        display: flex
+                        padding: 0 20px
+                        flex-wrap: wrap
+                        position: relative
+                        align-items: flex-start
+                        width: calc( 100% - 250px )
+                        justify-content: space-between
+                        .prgs-bx
+                            width: 50%
+                            display: flex
+                            flex-wrap: wrap
+                            padding: 0 15px
+                            margin-bottom: 30px
+                            align-items: center
+                            justify-content: center
+                            .title 
+                                margin: 10px 0 0
+                                p
+                                    color: $white
+                                    text-align: center
+                        .progress-bar 
+                            background: transparent
+                            position: relative
+                            height: 140px
+                            width: 140px
+                            div 
+                                position: absolute
+                                height: 140px
+                                width: 140px
+                                border-radius: 50%  
+                                span 
+                                    position: absolute
+                                    line-height: 125px
+                                    font-size: 32px
+                                    height: 125px
+                                    width: 125px
+                                    left: 7.5px
+                                    top: 7.5px
+                                    text-align: center
+                                    color: #ffffff9e
+                                    border-radius: 50%
+                                    background-color: #2D3136
+                            .rotate 
+                                clip: rect(0 70px 140px 0)
+                            .left 
+                                clip: rect(0 70px 140px 0)
+                                opacity: 1
+                            .right 
+                                clip: rect(0 70px 140px 0)
+                                transform: rotate(180deg)
+                                opacity: 0
+                                @keyframes toggle 
+                                    0% 
+                                        opacity: 0                                
+                                    100% 
+                                        opacity: 1
+                        .position 
+                            float: left
+
+                        
+                        
+                        
+                            
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

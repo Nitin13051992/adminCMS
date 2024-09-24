@@ -1,0 +1,80 @@
+[{
+    "CrtStorage" :[
+        {
+            "id": 1,
+            "title": "DB Storage",
+            "prsntvlu": 80,
+            "tspace": "125",
+            "carticn": "asset/images/dashboard/DB_strg_icn.svg",
+            "crtcolor": "#D80032"
+            
+        },
+        {
+            "id": 2,
+            "title": "CDN Usage",
+            "prsntvlu": 65,
+            "tspace": "100",
+            "carticn": "asset/images/dashboard/CDN_icn.svg",
+            "crtcolor": "#0791F8"
+            
+        },
+        {
+            "id": 3,
+            "title": "S3 Bucket",
+            "prsntvlu": 45,
+            "tspace": "100",
+            "carticn": "asset/images/dashboard/S3_Bckt_icn.svg",
+            "crtcolor": "#EA9010"
+            
+        }
+    ],
+    "OTTClientStatus":[
+        {
+            "id": "1",
+            "Publisher": "145",
+            "Title": "Total Publisher",
+            "cart_icn": "asset/images/dashboard/Publisher_icn.svg"
+        },
+        {
+            "id": "2",
+            "Publisher": "128",
+            "Title": "Total Menus",
+            "cart_icn": "asset/images/dashboard/Menus_icn.svg"
+        },
+        {
+            "id": "3",
+            "Publisher": "01",
+            "Title": "New Client",
+            "cart_icn": "asset/images/dashboard/Modules_icn.svg"
+        },
+        {
+            "id": "4",
+            "Publisher": "08",
+            "Title": "Total Modules",
+            "cart_icn": "asset/images/dashboard/Customers_icn.svg"
+        }
+    ],    
+    "TranscodingUser":[
+        {
+            "id": "1",
+            "title": "Total Success",
+            "crtvlus": "40067"
+        },
+        {
+            "id": "2",
+            "title": "Total Inprogress",
+            "crtvlus": "200"
+        },
+        {
+            "id": "3",
+            "title": "Total Failed",
+            "crtvlus": "300"
+        },
+        {
+            "id": "4",
+            "title": "Total Queue",
+            "crtvlus": "0"
+        }
+    ]
+}]
+
